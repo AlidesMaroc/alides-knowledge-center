@@ -48,10 +48,10 @@
         }
         
         html {
-            scroll-behavior: smooth;
+            scroll-behavior: smooth; height: auto; overflow-x: hidden;
         }
         
-        body {
+        body { min-height: 100%; height: auto;
             background: var(--alides-ivory);
             color: var(--alides-midnight);
             font-family: var(--font-body);
@@ -613,20 +613,105 @@
                 flex-wrap: wrap;
                 justify-content: center;
             }
+            
+            /* Hero mobile */
+            .hero {
+                padding: calc(var(--space-lg) + 60px) 1.25rem var(--space-md);
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+            
+            .hero-statement {
+                font-size: 1rem;
+            }
+            
+            /* Édito mobile */
+            .edito {
+                padding: var(--space-md) 1.25rem;
+            }
+            
+            .edito-content {
+                font-size: 0.95rem;
+            }
+            
+            .edito-content p {
+                text-align: left;
+            }
+            
+            /* Latest section mobile */
+            .latest {
+                padding: var(--space-md) 1.25rem;
+            }
+            
+            .latest-title {
+                font-size: 1.8rem;
+            }
+            
+            .latest-subtitle {
+                font-size: 0.95rem;
+            }
+            
+            /* Archives mobile */
+            .archives {
+                padding: var(--space-md) 1.25rem;
+            }
+            
+            .dossier-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .dossier-title {
+                font-size: 1.1rem;
+            }
+            
+            /* Why section mobile */
+            .why {
+                padding: var(--space-md) 1.25rem;
+            }
+            
+            .why-title {
+                font-size: 1.5rem;
+            }
+            
+            /* CTA mobile */
+            .cta {
+                padding: var(--space-md) 1.25rem;
+            }
+            
+            .cta-text {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 1.6rem;
+            }
+            
+            .latest-title {
+                font-size: 1.5rem;
+            }
+            
+            .edito-signature {
+                text-align: center;
+            }
         }
     </style>
 </head>
 
-<body>
+<body style="overflow-y: auto; -webkit-overflow-scrolling: touch;">
 
 <!-- HEADER -->
 <header>
     <div class="inner">
         <a href="https://www.alides.org" class="logo">Alides</a>
         <nav>
-            <a href="https://www.alides.org/executive-search-1">Executive Search</a>
-            <a href="https://www.alides.org/leadership-advisory">Leadership Advisory</a>
-            <a href="https://www.alides.org/board-services">Board Services</a>
+            <a href="https://www.alides.org/executive-search-maroc-afrique">Executive Search</a>
+            <a href="https://www.alides.org/board-services/board-advisory-questions">Gouvernance</a>
             <a href="#" class="active">Knowledge Center</a>
         </nav>
     </div>
@@ -786,8 +871,8 @@
         <span class="footer-logo">Alides</span>
         <div class="footer-links">
             <a href="https://www.alides.org">Accueil</a>
-            <a href="https://www.alides.org/executive-search-1">Executive Search</a>
-            <a href="https://www.alides.org/leadership-advisory">Leadership Advisory</a>
+            <a href="https://www.alides.org/executive-search-maroc-afrique">Executive Search</a>
+            <a href="https://www.alides.org/board-services/board-advisory-questions">Gouvernance</a>
             <a href="https://www.linkedin.com/company/alides-executivesearch" target="_blank">LinkedIn</a>
         </div>
         <span class="footer-copy">© 2025 Alides. Tous droits réservés.</span>

@@ -47,10 +47,10 @@
         }
         
         html {
-            scroll-behavior: smooth;
+            scroll-behavior: smooth; height: auto; overflow-x: hidden;
         }
         
-        body {
+        body { min-height: 100%; height: auto;
             font-family: var(--font-body);
             font-size: 18px;
             line-height: 1.7;
@@ -461,7 +461,7 @@
             color: var(--color-slate);
         }
         
-        .article-full-body {
+        .article-full-body { min-height: 100%; height: auto;
             font-family: var(--font-body);
             font-size: 1.1rem;
             line-height: 1.9;
@@ -650,7 +650,7 @@
         }
         
         @media (max-width: 768px) {
-            body {
+            body { min-height: 100%; height: auto;
                 font-size: 17px;
             }
             
@@ -757,7 +757,7 @@
         }
         
         @media (max-width: 480px) {
-            body {
+            body { min-height: 100%; height: auto;
                 font-size: 16px;
             }
             
@@ -784,7 +784,7 @@
         }
     </style>
 </head>
-<body>
+<body style="overflow-y: auto; -webkit-overflow-scrolling: touch;">
 
     <!-- HEADER -->
     <header class="site-header">
@@ -792,9 +792,8 @@
             <a href="https://www.alides.org" class="logo">Alides</a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="https://www.alides.org/executive-search-1">Executive Search</a></li>
-                    <li><a href="https://www.alides.org/leadership-advisory">Leadership Advisory</a></li>
-                    <li><a href="https://www.alides.org/board-services">Board Services</a></li>
+                    <li><a href="https://www.alides.org/executive-search-maroc-afrique">Executive Search</a></li>
+                    <li><a href="https://www.alides.org/board-services/board-advisory-questions">Gouvernance</a></li>
                     <li><a href="index.html" class="active">Knowledge Center</a></li>
                 </ul>
             </nav>
@@ -1042,8 +1041,8 @@
             <span class="footer-logo">Alides</span>
             <div class="footer-links">
                 <a href="https://www.alides.org">Accueil</a>
-                <a href="https://www.alides.org/executive-search-1">Executive Search</a>
-                <a href="https://www.alides.org/leadership-advisory">Leadership Advisory</a>
+                <a href="https://www.alides.org/executive-search-maroc-afrique">Executive Search</a>
+                <a href="https://www.alides.org/board-services/board-advisory-questions">Gouvernance</a>
                 <a href="https://www.linkedin.com/company/alides-executivesearch" target="_blank">LinkedIn</a>
             </div>
             <span class="footer-copyright">© 2025 Alides. Tous droits réservés.</span>

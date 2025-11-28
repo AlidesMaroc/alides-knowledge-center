@@ -28,8 +28,8 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body {
+        html { scroll-behavior: smooth; height: auto; overflow-x: hidden; }
+        body { min-height: 100%; height: auto;
             font-family: var(--font-serif);
             font-size: 19px;
             line-height: 1.7;
@@ -497,7 +497,7 @@
                 --space-xl: 3.5rem;
             }
             
-            body {
+            body { min-height: 100%; height: auto;
                 font-size: 17px;
             }
             
@@ -682,7 +682,7 @@
         }
         
         @media (max-width: 480px) {
-            body {
+            body { min-height: 100%; height: auto;
                 font-size: 16px;
             }
             
@@ -704,15 +704,14 @@
         }
     </style>
 </head>
-<body>
+<body style="overflow-y: auto; -webkit-overflow-scrolling: touch;">
 
     <header class="header">
         <div class="header-inner">
             <a href="https://www.alides.org" class="logo">Alides</a>
             <nav class="header-nav">
-                <a href="https://www.alides.org/executive-search-1">Executive Search</a>
-                <a href="https://www.alides.org/leadership-advisory">Leadership Advisory</a>
-                <a href="https://www.alides.org/board-services">Board Services</a>
+                <a href="https://www.alides.org/executive-search-maroc-afrique">Executive Search</a>
+                <a href="https://www.alides.org/board-services/board-advisory-questions">Gouvernance</a>
                 <a href="index.html" class="active">Knowledge Center</a>
             </nav>
         </div>
@@ -1092,9 +1091,9 @@
         <div class="footer-inner">
             <div class="footer-links">
                 <a href="https://www.alides.org">Alides.org</a>
-                <a href="#">Executive Search</a>
-                <a href="#">Gouvernance</a>
-                <a href="#">LinkedIn</a>
+                <a href="https://www.alides.org/executive-search-maroc-afrique">Executive Search</a>
+                <a href="https://www.alides.org/board-services/board-advisory-questions">Gouvernance</a>
+                <a href="https://www.linkedin.com/company/alides-executivesearch" target="_blank">LinkedIn</a>
             </div>
             <div class="footer-copy">© 2025 Alides · Member of ECI Group</div>
         </div>
