@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Center — Dossiers Stratégiques | Alides</title>
+    <meta name="description" content="L'IA comme infrastructure de puissance. De l'innovation à la souveraineté : ce que l'IA révèle du leadership, de la gouvernance et des boards. Dossier stratégique Alides Q1 2026.">
+    <link rel="canonical" href="https://www.alides.org/knowledge">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.alides.org/knowledge">
+    <meta property="og:title" content="Knowledge Center — Dossiers Stratégiques | Alides">
+    <meta property="og:description" content="L'IA comme infrastructure de puissance. De l'innovation à la souveraineté : ce que l'IA révèle du leadership, de la gouvernance et des boards.">
+    <meta property="og:image" content="https://www.alides.org/knowledge/og-ia-infrastructure-q1-2026.jpg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Alides">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Knowledge Center — Dossiers Stratégiques | Alides">
+    <meta name="twitter:description" content="L'IA comme infrastructure de puissance. De l'innovation à la souveraineté.">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+    function goTo(id) {
+        var element = document.getElementById(id);
+        if (!element) return;
+        if (window.innerWidth <= 680) {
+            var contentId = id + '-content';
+            var content = document.getElementById(contentId);
+            var header = document.querySelector('.article-accordion-header[data-target="' + contentId + '"]');
+            if (content && header) {
+                var allContents = document.querySelectorAll('.article-accordion-content');
+                var allHeaders = document.querySelectorAll('.article-accordion-header');
+                for (var i = 0; i < allContents.length; i++) { allContents[i].classList.remove('open'); }
+                for (var i = 0; i < allHeaders.length; i++) { allHeaders[i].classList.remove('active'); }
+                content.classList.add('open');
+                header.classList.add('active');
+            }
+        }
+        setTimeout(function() { element.scrollIntoView({behavior: 'smooth', block: 'start'}); }, 100);
+    }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        [id] { scroll-margin-top: 80px; }
+        :root {
+            --alides-midnight: #142036;
+            --alides-midnight-light: #1a2a45;
+            --alides-gold: #C6A157;
+            --alides-gold-dark: #9E7E3A;
+            --alides-ivory: #F7F5F2;
+            --alides-warm-white: #FDFCFA;
+            --alides-white: #ffffff;
+            --alides-text: #3A3A3A;
+            --alides-text-light: #666666;
+            --alides-border: rgba(20, 32, 54, 0.08);
+            --font-title: 'EB Garamond', Georgia, serif;
+            --font-body: 'EB Garamond', Georgia, serif;
+            --font-ui: 'Inter', -apple-system, sans-serif;
+            --max-width: 1100px;
+            --max-width-narrow: 720px;
+            --max-width-article: 680px;
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 2.5rem;
+            --space-lg: 4rem;
+            --space-xl: 6rem;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: var(--alides-ivory); color: var(--alides-midnight); font-family: var(--font-body); font-size: 1.1rem; line-height: 1.8; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; overflow-x: hidden; }
+        .nav-top { position: sticky; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.97); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--alides-border); z-index: 1000; padding: 1.1rem 2rem; }
+        .nav-top-inner { max-width: var(--max-width); margin: auto; display: flex; justify-content: center; align-items: center; }
+        .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+        .nav-link { font-family: var(--font-ui); font-size: 0.75rem; color: var(--alides-text-light); text-decoration: none; letter-spacing: 0.05em; transition: color 0.3s ease; cursor: pointer; }
+        .nav-link:hover { color: var(--alides-midnight); }
+        .nav-link.active { color: var(--alides-gold-dark); }
+        .nav-separator { width: 1px; height: 14px; background: var(--alides-border); }
+        .hero-kc { background: var(--alides-white); padding: var(--space-lg) 2rem var(--space-md); text-align: center; border-bottom: 1px solid var(--alides-border); }
+        .hero-kc-inner { max-width: var(--max-width-narrow); margin: auto; }
+        .hero-kc-label { font-family: var(--font-ui); color: var(--alides-gold-dark); font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 1.2rem; }
+        .hero-kc-title { font-family: var(--font-title); font-size: clamp(2.2rem, 4.5vw, 3rem); font-weight: 400; color: var(--alides-midnight); margin-bottom: 1.5rem; line-height: 1.15; }
+        .hero-kc-statement { font-family: var(--font-body); font-size: 1.1rem; font-weight: 400; color: var(--alides-text); line-height: 1.7; max-width: 580px; margin: 0 auto; }
+        .current-dossier { background: var(--alides-midnight); padding: var(--space-lg) 2rem; }
+        .current-dossier-inner { max-width: var(--max-width); margin: auto; }
+        .current-header { text-align: center; margin-bottom: var(--space-md); }
+        .current-label { font-family: var(--font-ui); color: var(--alides-gold); font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .current-quarter { font-family: var(--font-ui); color: rgba(255,255,255,0.5); font-size: 0.72rem; letter-spacing: 0.1em; margin-bottom: 1.2rem; }
+        .current-title { font-family: var(--font-title); font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 400; color: var(--alides-white); margin-bottom: 0.8rem; line-height: 1.2; }
+        .current-subtitle { font-family: var(--font-body); font-size: 1.15rem; color: rgba(247, 245, 242, 0.7); font-style: italic; }
+        .toc { background: var(--alides-midnight-light); padding: var(--space-md) 2rem; }
+        .toc-inner { max-width: var(--max-width); margin: auto; }
+        .toc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+        @media (max-width: 1000px) { .toc-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px) { .toc-grid { grid-template-columns: 1fr; } }
+        .toc-item { display: block; padding: 1.5rem; text-decoration: none; border-right: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08); transition: background 0.3s ease; cursor: pointer; pointer-events: auto; }
+        .toc-item:nth-child(4n) { border-right: none; }
+        @media (max-width: 1000px) { .toc-item:nth-child(4n) { border-right: 1px solid rgba(255,255,255,0.08); } .toc-item:nth-child(2n) { border-right: none; } }
+        @media (max-width: 600px) { .toc-item { border-right: none; } }
+        .toc-item:hover { background: rgba(198, 161, 87, 0.08); }
+        .toc-number { font-family: var(--font-ui); font-size: 0.65rem; color: var(--alides-gold); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .toc-title { font-family: var(--font-title); font-size: 1.05rem; color: var(--alides-white); line-height: 1.35; }
+        .edito { background: var(--alides-ivory); padding: var(--space-lg) 2rem; border-bottom: 1px solid var(--alides-border); }
+        .edito-inner { max-width: var(--max-width-article); margin: auto; }
+        .section-header { text-align: center; margin-bottom: var(--space-md); }
+        .section-label { font-family: var(--font-ui); color: var(--alides-gold-dark); font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 0.8rem; }
+        .section-title { font-family: var(--font-title); font-size: 1.9rem; font-weight: 400; color: var(--alides-midnight); font-style: italic; }
+        .content-body { font-family: var(--font-body); font-size: 1.05rem; color: var(--alides-text); line-height: 1.85; }
+        .content-body p { margin-bottom: 1.4rem; text-align: justify; text-justify: inter-word; hyphens: auto; -webkit-hyphens: auto; }
+        .content-body h3 { font-family: var(--font-title); font-size: 1.35rem; font-weight: 500; color: var(--alides-midnight); margin: 2.2rem 0 1rem; }
+        .content-body strong { font-weight: 500; color: var(--alides-midnight); }
+        .content-body em { font-style: italic; }
+        .pullquote { font-family: var(--font-title); font-size: 1.25rem; font-style: italic; color: var(--alides-midnight); text-align: center; margin: 2.5rem 0; padding: 2rem; background: var(--alides-white); border-left: 3px solid var(--alides-gold); }
+        .signature { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--alides-border); text-align: right; }
+        .signature-author { font-family: var(--font-title); font-size: 1.1rem; font-weight: 500; color: var(--alides-midnight); margin-bottom: 0.2rem; }
+        .signature-role { font-family: var(--font-ui); font-size: 0.75rem; color: var(--alides-text-light); letter-spacing: 0.03em; }
+        .article { padding: var(--space-lg) 2rem; border-bottom: 1px solid var(--alides-border); }
+        .article:nth-child(odd) { background: var(--alides-white); }
+        .article:nth-child(even) { background: var(--alides-ivory); }
+        .article-inner { max-width: var(--max-width-article); margin: auto; }
+        .article-header { margin-bottom: var(--space-md); text-align: center; }
+        .article-number { font-family: var(--font-ui); font-size: 0.7rem; color: var(--alides-gold-dark); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1rem; }
+        .article-title { font-family: var(--font-title); font-size: 1.9rem; font-weight: 400; color: var(--alides-midnight); margin-bottom: 0.5rem; line-height: 1.2; }
+        .article-subtitle { font-family: var(--font-body); font-size: 1.1rem; color: var(--alides-text-light); font-style: italic; }
+        .article-accordion-header { display: none; }
+        .article-accordion-content { max-height: none; overflow: visible; }
+        @media (max-width: 680px) {
+            .article-accordion-header { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 0; cursor: pointer; border-bottom: 1px solid var(--alides-border); -webkit-tap-highlight-color: transparent; }
+            .article-accordion-header:hover { opacity: 0.85; }
+            .accordion-title-group { flex: 1; padding-right: 1rem; }
+            .accordion-number { font-family: var(--font-ui); font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--alides-gold-dark); margin-bottom: 0.3rem; }
+            .accordion-title { font-family: var(--font-title); font-size: 1.15rem; font-weight: 500; color: var(--alides-midnight); line-height: 1.3; }
+            .accordion-icon { width: 32px; height: 32px; border: 1px solid var(--alides-border); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-ui); font-size: 1.2rem; font-weight: 300; color: var(--alides-text-light); flex-shrink: 0; transition: all 0.3s ease; }
+            .article-accordion-header.active .accordion-icon { background: var(--alides-midnight); border-color: var(--alides-midnight); color: var(--alides-white); transform: rotate(45deg); }
+            .article-accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.5s ease-out; }
+            .article-accordion-content.open { max-height: 15000px; transition: max-height 0.8s ease-in; }
+            .article-header-desktop { display: none; }
+            .edito, .article, .conclusion { padding-top: 0; padding-bottom: 0; }
+            .article-inner, .edito-inner, .conclusion-inner { padding-top: 1.5rem; padding-bottom: 2rem; }
+            .articles-accordion-container { padding: 0 1.4rem; background: var(--alides-warm-white); }
+        }
+        .visual-container { margin: 2.5rem 0; padding: 2rem; background: var(--alides-warm-white); border: 1px solid var(--alides-border); border-radius: 2px; overflow-x: auto; }
+        .article:nth-child(odd) .visual-container { background: var(--alides-ivory); }
+        .visual-svg { max-width: 100%; height: auto; display: block; margin: 0 auto; min-width: 600px; }
+        @media (max-width: 700px) { .visual-svg { min-width: 500px; } }
+        .visual-desktop { display: block; }
+        .visual-mobile { display: none; }
+        @media (max-width: 680px) {
+            .visual-desktop { display: none; }
+            .visual-mobile { display: block; }
+            .visual-container { overflow-x: visible; padding: 0; background: transparent; border: none; }
+        }
+        .concept-card { background: var(--alides-white); border: 1px solid var(--alides-border); padding: 1.8rem; margin-bottom: 1rem; }
+        .concept-card:last-child { margin-bottom: 0; }
+        .concept-card.dark { background: var(--alides-midnight); border-color: var(--alides-midnight); }
+        .concept-label { font-family: var(--font-ui); font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--alides-text-light); margin-bottom: 0.8rem; }
+        .concept-card.dark .concept-label { color: var(--alides-gold); }
+        .concept-title { font-family: var(--font-title); font-size: 1.3rem; font-weight: 500; color: var(--alides-midnight); margin-bottom: 1rem; line-height: 1.3; }
+        .concept-card.dark .concept-title { color: var(--alides-white); }
+        .concept-list { list-style: none; }
+        .concept-item { font-family: var(--font-body); font-size: 1rem; color: var(--alides-text); padding: 0.6rem 0; border-bottom: 1px solid var(--alides-border); line-height: 1.5; }
+        .concept-item:last-child { border-bottom: none; padding-bottom: 0; }
+        .concept-card.dark .concept-item { color: rgba(255,255,255,0.85); border-bottom-color: rgba(255,255,255,0.1); }
+        .concept-item strong { color: var(--alides-midnight); font-weight: 500; }
+        .concept-card.dark .concept-item strong { color: var(--alides-white); }
+        .concept-arrow { display: flex; align-items: center; justify-content: center; padding: 1rem 0; color: var(--alides-gold-dark); font-size: 1.5rem; }
+        .concept-footer { font-family: var(--font-title); font-size: 0.95rem; font-style: italic; color: var(--alides-text-light); text-align: center; margin-top: 1.2rem; padding-top: 1.2rem; border-top: 1px solid var(--alides-border); }
+        .concept-card.dark .concept-footer { color: rgba(255,255,255,0.6); border-top-color: rgba(255,255,255,0.1); }
+        .concept-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        @media (max-width: 480px) { .concept-grid { grid-template-columns: 1fr; } }
+        .concept-circles { text-align: center; }
+        .concept-circle { padding: 1.2rem 1.5rem; margin-bottom: 0.5rem; border-radius: 4px; }
+        .concept-circle.outer { background: var(--alides-midnight); color: var(--alides-white); }
+        .concept-circle.middle { background: var(--alides-midnight-light); color: var(--alides-white); margin-left: 1rem; margin-right: 1rem; }
+        .concept-circle.inner { background: var(--alides-white); color: var(--alides-midnight); border: 1px solid var(--alides-border); margin-left: 2rem; margin-right: 2rem; }
+        .concept-circle-label { font-family: var(--font-ui); font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.7; margin-bottom: 0.3rem; }
+        .concept-circle-title { font-family: var(--font-title); font-size: 1.1rem; font-weight: 500; }
+        .concept-triangle { text-align: center; }
+        .concept-triangle-center { background: var(--alides-midnight); color: var(--alides-white); padding: 1.5rem; margin-bottom: 1rem; }
+        .concept-triangle-points { display: grid; grid-template-columns: 1fr; gap: 0.8rem; }
+        .concept-triangle-point { background: var(--alides-white); border: 1px solid var(--alides-border); padding: 1rem 1.2rem; text-align: left; }
+        .concept-triangle-point-title { font-family: var(--font-title); font-size: 1.05rem; font-weight: 500; color: var(--alides-midnight); margin-bottom: 0.3rem; }
+        .concept-triangle-point-desc { font-family: var(--font-ui); font-size: 0.8rem; color: var(--alides-text-light); }
+        .arbitrage-box { margin: 2.5rem 0; padding: 2rem; background: var(--alides-midnight); color: var(--alides-white); }
+        .arbitrage-label { font-family: var(--font-ui); font-size: 0.7rem; color: var(--alides-gold); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.2rem; }
+        .arbitrage-sublabel { font-family: var(--font-ui); font-size: 0.7rem; color: rgba(255,255,255,0.5); letter-spacing: 0.05em; margin-bottom: 1.5rem; }
+        .arbitrage-list { list-style: none; }
+        .arbitrage-item { font-family: var(--font-body); font-size: 1rem; color: rgba(255,255,255,0.9); padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); line-height: 1.5; }
+        .arbitrage-item:last-child { border-bottom: none; padding-bottom: 0; }
+        .arbitrage-item strong { color: var(--alides-white); font-weight: 500; }
+        .transition-box { margin: 2.5rem 0 0; padding: 1.5rem 2rem; background: var(--alides-warm-white); border-left: 3px solid var(--alides-gold); }
+        .article:nth-child(odd) .transition-box { background: var(--alides-ivory); }
+        .transition-text { font-family: var(--font-title); font-size: 1.1rem; font-style: italic; color: var(--alides-midnight); line-height: 1.5; }
+        .conclusion { background: var(--alides-midnight); padding: var(--space-lg) 2rem; }
+        .conclusion-inner { max-width: var(--max-width-article); margin: auto; }
+        .conclusion .section-label { color: var(--alides-gold); }
+        .conclusion .section-title { color: var(--alides-white); }
+        .conclusion .content-body { color: rgba(247, 245, 242, 0.85); }
+        .conclusion .content-body p { text-align: justify; }
+        .conclusion-question { font-family: var(--font-title); font-size: 1.35rem; font-style: italic; color: var(--alides-white); text-align: center; margin: 3rem 0; padding: 2rem; border: 1px solid rgba(198, 161, 87, 0.4); }
+        .conclusion .signature { border-top-color: rgba(255,255,255,0.1); }
+        .conclusion .signature-author { color: var(--alides-white); }
+        .conclusion .signature-role { color: rgba(255,255,255,0.5); }
+        .archives { padding: var(--space-lg) 2rem; background: var(--alides-ivory); border-top: 1px solid var(--alides-border); }
+        .archives-inner { max-width: var(--max-width); margin: auto; }
+        .archives-header { text-align: center; margin-bottom: var(--space-md); }
+        .archives-title { font-family: var(--font-title); font-size: 1.8rem; font-weight: 400; color: var(--alides-midnight); }
+        .dossier-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .dossier-card { display: block; text-decoration: none; background: var(--alides-white); padding: 2rem; border: 1px solid var(--alides-border); transition: all 0.3s ease; }
+        .dossier-card:hover { border-color: var(--alides-gold); transform: translateY(-4px); box-shadow: 0 12px 35px rgba(20, 32, 54, 0.1); }
+        .dossier-quarter { font-family: var(--font-ui); font-size: 0.7rem; color: var(--alides-text-light); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .dossier-title { font-family: var(--font-title); font-size: 1.3rem; font-weight: 500; color: var(--alides-midnight); margin-bottom: 0.5rem; line-height: 1.3; }
+        .dossier-desc { font-size: 0.95rem; color: var(--alides-text-light); margin-bottom: 1.2rem; line-height: 1.55; }
+        .dossier-meta { display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid var(--alides-border); }
+        .dossier-count { font-family: var(--font-ui); font-size: 0.72rem; color: var(--alides-text-light); }
+        .dossier-link { font-family: var(--font-ui); font-size: 0.72rem; color: var(--alides-gold-dark); letter-spacing: 0.05em; font-weight: 500; transition: color 0.3s ease; }
+        .dossier-card:hover .dossier-link { color: var(--alides-midnight); }
+        .why { padding: var(--space-lg) 2rem; background: var(--alides-white); border-top: 1px solid var(--alides-border); }
+        .why-inner { max-width: var(--max-width); margin: auto; display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: start; }
+        @media (max-width: 800px) { .why-inner { grid-template-columns: 1fr; gap: 2rem; } }
+        .why-title { font-family: var(--font-title); font-size: 1.7rem; font-weight: 400; color: var(--alides-midnight); line-height: 1.3; }
+        .why-content { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        @media (max-width: 600px) { .why-content { grid-template-columns: 1fr; } }
+        .why-item { padding-left: 1rem; border-left: 2px solid var(--alides-gold); }
+        .why-item-title { font-family: var(--font-ui); font-size: 0.75rem; font-weight: 500; color: var(--alides-midnight); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .why-item-text { font-size: 0.95rem; color: var(--alides-text-light); line-height: 1.6; }
+        .cta { padding: var(--space-md) 2rem; background: var(--alides-midnight); text-align: center; }
+        .cta-inner { max-width: var(--max-width-narrow); margin: auto; }
+        .cta-text { font-family: var(--font-body); font-size: 1.15rem; color: rgba(247, 245, 242, 0.8); margin-bottom: 1.5rem; }
+        .cta-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+        .cta-btn { display: inline-block; padding: 0.9rem 2rem; background: var(--alides-gold); color: var(--alides-midnight); font-family: var(--font-ui); text-decoration: none; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; transition: all 0.3s ease; }
+        .cta-btn:hover { background: var(--alides-white); }
+        .cta-btn.secondary { background: transparent; border: 1px solid var(--alides-gold); color: var(--alides-gold); }
+        .cta-btn.secondary:hover { background: var(--alides-gold); color: var(--alides-midnight); }
+        .footer { background: var(--alides-midnight); padding: 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); }
+        .footer-text { font-family: var(--font-ui); font-size: 0.75rem; color: rgba(255,255,255,0.4); letter-spacing: 0.05em; }
+        .footer-text a { color: var(--alides-gold); text-decoration: none; }
+        @media (max-width: 900px) { :root { --space-lg: 3.5rem; --space-md: 2rem; } .article-title, .section-title { font-size: 1.75rem; } .toc-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 680px) {
+            html { font-size: 17px; }
+            :root { --space-lg: 2.8rem; --space-md: 1.8rem; }
+            body { line-height: 1.85; }
+            .nav-top { padding: 0.9rem 1.2rem; }
+            .nav-separator { display: none; }
+            .nav-links { gap: 1.5rem; }
+            .nav-link { font-size: 0.72rem; }
+            .hero-kc, .edito, .article, .conclusion, .archives, .why, .cta { padding-left: 1.4rem; padding-right: 1.4rem; }
+            .hero-kc-title { font-size: 1.8rem; }
+            .hero-kc-statement { font-size: 1.05rem; }
+            .current-dossier { padding: 2.5rem 1.4rem; }
+            .current-title { font-size: 1.6rem; }
+            .toc-grid { grid-template-columns: 1fr; }
+            .toc-item { padding: 1.2rem 1.4rem; border-right: none; }
+            .article-title, .section-title { font-size: 1.5rem; }
+            .content-body { font-size: 1.05rem; }
+            .content-body p { text-align: left; hyphens: none; }
+            .content-body h3 { font-size: 1.2rem; }
+            .pullquote, .conclusion-question { font-size: 1.1rem; padding: 1.5rem; }
+            .arbitrage-box { padding: 1.5rem; margin-left: -1.4rem; margin-right: -1.4rem; }
+            .arbitrage-item { font-size: 1rem; }
+            .visual-container { margin-left: -1.4rem; margin-right: -1.4rem; padding: 1rem; border-left: none; border-right: none; border-radius: 0; }
+            .transition-box { padding: 1.2rem 1.4rem; }
+            .transition-text { font-size: 1rem; }
+            .dossier-grid { grid-template-columns: 1fr; }
+            .dossier-card { padding: 1.6rem; }
+            .why-inner { grid-template-columns: 1fr; gap: 2rem; }
+            .why-content { grid-template-columns: 1fr; }
+            .cta-buttons { flex-direction: column; }
+            .cta-btn { width: 100%; text-align: center; }
+            .signature { text-align: center; }
+        }
+        @media print { .nav-top, .toc, .cta, .footer { display: none; } .article, .edito, .conclusion { break-inside: avoid; } }
+    </style>
+</head>
+<body>
+
+<nav class="nav-top">
+    <div class="nav-top-inner">
+        <div class="nav-links">
+            <a href="javascript:goTo('current');" class="nav-link active">Dossier en cours</a>
+            <span class="nav-separator"></span>
+            <a href="javascript:goTo('archives');" class="nav-link">Archives</a>
+            <span class="nav-separator"></span>
+            <a href="https://www.alides.org/contact" class="nav-link" target="_top">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-kc">
+    <div class="hero-kc-inner">
+        <p class="hero-kc-label">Knowledge Center</p>
+        <h1 class="hero-kc-title">Dossiers Stratégiques</h1>
+        <p class="hero-kc-statement">Les Dossiers Stratégiques Alides analysent les transformations silencieuses qui redéfinissent le leadership, la gouvernance et la continuité des organisations au Maroc et en Afrique.</p>
+    </div>
+</header>
+
+<section id="current" class="current-dossier">
+    <div class="current-dossier-inner">
+        <header class="current-header">
+            <p class="current-label">Dossier en cours</p>
+            <p class="current-quarter">Q1 2026</p>
+            <h2 class="current-title">L'IA comme infrastructure de puissance</h2>
+            <p class="current-subtitle">De l'innovation à la souveraineté : êtes-vous encore aux commandes ?</p>
+        </header>
+    </div>
+</section>
+
+<nav class="toc">
+    <div class="toc-inner">
+        <div class="toc-grid">
+            <a href="javascript:goTo('edito');" class="toc-item">
+                <p class="toc-number">Édito</p>
+                <p class="toc-title">Gouverner l'irréversible</p>
+            </a>
+            <a href="javascript:goTo('article1');" class="toc-item">
+                <p class="toc-number">Article 01</p>
+                <p class="toc-title">Quand une technologie change de statut</p>
+            </a>
+            <a href="javascript:goTo('article2');" class="toc-item">
+                <p class="toc-number">Article 02</p>
+                <p class="toc-title">L'angle mort des dirigeants</p>
+            </a>
+            <a href="javascript:goTo('article3');" class="toc-item">
+                <p class="toc-number">Article 03</p>
+                <p class="toc-title">La stack IA — Le socle invisible</p>
+            </a>
+            <a href="javascript:goTo('article4');" class="toc-item">
+                <p class="toc-number">Article 04</p>
+                <p class="toc-title">La stack IA — Le pouvoir silencieux</p>
+            </a>
+            <a href="javascript:goTo('article5');" class="toc-item">
+                <p class="toc-number">Article 05</p>
+                <p class="toc-title">Quand l'ambidextrie devient géopolitique</p>
+            </a>
+            <a href="javascript:goTo('article6');" class="toc-item">
+                <p class="toc-number">Article 06</p>
+                <p class="toc-title">Le véritable test des boards</p>
+            </a>
+            <a href="javascript:goTo('conclusion');" class="toc-item">
+                <p class="toc-number">Conclusion</p>
+                <p class="toc-title">L'IA comme épreuve du leadership</p>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<section id="edito" class="edito">
+    <div class="article-accordion-header edito-accordion-header active" data-target="edito-content">
+        <div class="accordion-title-group">
+            <p class="accordion-number">Édito</p>
+            <h2 class="accordion-title">Gouverner l'irréversible</h2>
+        </div>
+        <span class="accordion-icon">+</span>
+    </div>
+    <div id="edito-content" class="article-accordion-content open">
+    <div class="edito-inner">
+        <header class="section-header article-header-desktop">
+            <p class="section-label">Éditorial</p>
+            <h2 class="section-title">Gouverner l'irréversible</h2>
+        </header>
+        <div class="content-body">
+            <p>Il existe un moment précis où une technologie cesse d'être une promesse pour devenir une responsabilité. Un moment où la question n'est plus <em>faut-il y aller ?</em> mais <em>qui arbitre, et selon quels principes ?</em></p>
+            <p>L'intelligence artificielle a franchi ce seuil.</p>
+            <p>Lorsqu'elle est discutée dans les cercles de la sécurité nationale, lorsqu'elle conditionne l'accès à l'énergie, au capital industriel, aux standards technologiques et aux alliances géopolitiques, elle ne relève plus du registre de l'innovation. Elle entre dans celui des infrastructures. Et toute infrastructure crée, par définition, des dépendances durables, des asymétries de pouvoir et des irréversibilités.</p>
+            <p>C'est là que le malaise commence.</p>
+            <p>Car nous savons investir. Nous savons expérimenter. Nous savons lancer des programmes, mobiliser des équipes, signer des partenariats. Mais gouverner une infrastructure — arbitrer dans le temps long, assumer des tensions qui ne se résolvent pas, engager des choix qui ne produiront pas de résultats immédiats — est d'une autre nature. Cela ne se délègue pas. Cela ne s'automatise pas. Cela engage le leadership au sens plein du terme.</p>
+            <p>Ce que révèle l'IA, ce n'est pas seulement une accélération technologique. C'est une mise à nu de nos architectures de décision. Une incapacité fréquente à penser simultanément l'optimisation du présent et la construction du futur. Une difficulté persistante à assumer des investissements incompatibles avec les métriques existantes. Une tentation constante de déléguer à la technique ce qui relève, en réalité, de la responsabilité stratégique.</p>
+            <p>Responsabilité vis-à-vis du capital engagé sur des horizons qui excèdent les cycles financiers. Responsabilité vis-à-vis des dépendances énergétiques et industrielles que l'on accepte — ou que l'on subit. Responsabilité vis-à-vis des talents, du travail humain et du jugement que l'on choisit d'augmenter ou d'appauvrir. Responsabilité, enfin, vis-à-vis de la place que l'on occupera demain dans l'économie mondiale : architecte d'un système, ou simple occupant d'infrastructures conçues ailleurs.</p>
+            <p>Ce dossier propose une lecture exigeante. Non pas une lecture technologique, ni même strictement économique — mais une lecture de gouvernance. L'IA y est analysée pour ce qu'elle est devenue : une infrastructure de puissance, dont les arbitrages ne peuvent plus être différés sans coût stratégique, ni délégués sans perte de souveraineté.</p>
+            <p>Les grandes ruptures industrielles ont toujours produit le même paradoxe. Elles sont visibles, commentées, analysées — et pourtant mal gouvernées. Non par manque d'intelligence ou de moyens, mais parce qu'elles exigent de tenir ensemble des logiques qui s'opposent : performance immédiate et investissement patient, protection et ouverture, optimisation et transformation. Gouverner ces tensions est l'épreuve même du leadership. C'est cette épreuve que l'IA impose aujourd'hui aux dirigeants et aux conseils d'administration.</p>
+            <p>La question que nous posons traverse l'ensemble de ce dossier. Elle n'appelle pas de réponse simple. Elle appelle un arbitrage lucide.</p>
+        </div>
+        <div class="pullquote">Sommes-nous encore en position de choisir l'architecture que nous sommes en train de construire ?</div>
+        <div class="signature">
+            <p class="signature-author"><a href="https://www.alides.org/eci-group-executive-search/equipe-internationale#mehdi-el-idrissi" target="_top" style="color: inherit; text-decoration: none; border-bottom: 1px solid currentColor;">Mehdi El Idrissi</a></p>
+            <p class="signature-role">Managing Partner, Alides</p>
+        </div>
+    </div>
+    </div>
+</section>
+
+<article id="article1" class="article">
+    <div class="article-accordion-header" data-target="article1-content">
+        <div class="accordion-title-group">
+            <p class="accordion-number">Article 01</p>
+            <h2 class="accordion-title">Quand une technologie change de statut</h2>
+        </div>
+        <span class="accordion-icon">+</span>
+    </div>
+    <div id="article1-content" class="article-accordion-content">
+    <div class="article-inner">
+        <header class="article-header article-header-desktop">
+            <p class="article-number">Article 01</p>
+            <h2 class="article-title">Quand une technologie change de statut</h2>
+            <p class="article-subtitle">De l'innovation à l'infrastructure</p>
+        </header>
+        <div class="content-body">
+            <p>Le 3 décembre 2025, Jensen Huang ne s'exprimait ni à Davos, ni lors d'un sommet technologique, ni devant une communauté d'innovateurs. Il intervenait au Center for Strategic and International Studies.</p>
+            <p>Ce choix de lieu n'est pas anodin. Il marque un seuil.</p>
+            <p>Lorsqu'une technologie devient un objet de discussion au CSIS, elle sort du champ de l'innovation économique pour entrer dans celui de la puissance stratégique. Elle cesse d'être évaluée à l'aune de ses performances ou de ses promesses de productivité ; elle est désormais jugée pour ce qu'elle permet — ou empêche — à l'échelle d'un État, d'une industrie ou d'un système économique.</p>
+            <p>Ce déplacement institutionnel révèle un basculement plus profond : l'intelligence artificielle a changé de statut.</p>
+            <h3>Du progrès technologique à l'infrastructure critique</h3>
+            <p>L'IA n'est plus une technologie que l'on adopte. Elle est devenue une infrastructure que l'on construit.</p>
+            <p>Ce glissement transforme radicalement la nature des décisions en jeu. Une technologie se teste, se compare, se remplace. Une infrastructure engage le temps long, mobilise des volumes de capital massifs et crée des dépendances durables. Elle structure ce qui devient possible — et ce qui ne l'est plus.</p>
+            <p>Ce passage de la technologie à l'infrastructure redéfinit le registre stratégique tout entier. La performance cède la place à la puissance. Le projet ponctuel s'efface devant l'architecture de long terme. L'expérimentation laisse place à l'engagement irréversible.</p>
+        </div>
+        <div class="visual-container">
+            <div class="visual-desktop">
+            <svg class="visual-svg" viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg">
+                <rect width="900" height="480" fill="#fafafa"/>
+                <rect x="80" y="60" width="300" height="340" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+                <text x="230" y="100" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#1a1a1a" text-anchor="middle" letter-spacing="0.08em">TECHNOLOGIE</text>
+                <line x1="180" y1="115" x2="280" y2="115" stroke="#e0e0e0" stroke-width="1"/>
+                <text x="230" y="160" font-family="EB Garamond, serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Performance</text>
+                <text x="230" y="180" font-family="Inter, sans-serif" font-size="10" fill="#888" text-anchor="middle">Gains mesurables, ROI court terme</text>
+                <text x="230" y="225" font-family="EB Garamond, serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Projet</text>
+                <text x="230" y="245" font-family="Inter, sans-serif" font-size="10" fill="#888" text-anchor="middle">Début et fin définis</text>
+                <text x="230" y="290" font-family="EB Garamond, serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Expérimentation</text>
+                <text x="230" y="310" font-family="Inter, sans-serif" font-size="10" fill="#888" text-anchor="middle">Tests, itérations, pivots</text>
+                <text x="230" y="355" font-family="EB Garamond, serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Réversibilité</text>
+                <text x="230" y="375" font-family="Inter, sans-serif" font-size="10" fill="#888" text-anchor="middle">Options ouvertes</text>
+                <polygon points="420,230 480,200 480,218 540,218 540,242 480,242 480,260" fill="#142036"/>
+                <rect x="520" y="60" width="300" height="340" fill="#142036"/>
+                <text x="670" y="100" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.08em">INFRASTRUCTURE</text>
+                <line x1="620" y1="115" x2="720" y2="115" stroke="#1a2a45" stroke-width="1"/>
+                <text x="670" y="160" font-family="EB Garamond, serif" font-size="16" fill="#ffffff" text-anchor="middle">Puissance</text>
+                <text x="670" y="180" font-family="Inter, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">Capacité structurante, souveraineté</text>
+                <text x="670" y="225" font-family="EB Garamond, serif" font-size="16" fill="#ffffff" text-anchor="middle">Architecture</text>
+                <text x="670" y="245" font-family="Inter, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">Engagement de long terme</text>
+                <text x="670" y="290" font-family="EB Garamond, serif" font-size="16" fill="#ffffff" text-anchor="middle">Construction</text>
+                <text x="670" y="310" font-family="Inter, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">Investissement patient, capital lourd</text>
+                <text x="670" y="355" font-family="EB Garamond, serif" font-size="16" fill="#ffffff" text-anchor="middle">Irréversibilité</text>
+                <text x="670" y="375" font-family="Inter, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">Dépendances durables</text>
+                <text x="450" y="450" font-family="EB Garamond, serif" font-size="13" fill="#666666" text-anchor="middle" font-style="italic">Ce n'est pas une amélioration continue. C'est un changement de nature.</text>
+            </svg>
+            </div>
+            <div class="visual-mobile">
+                <div class="concept-card">
+                    <p class="concept-label">Avant</p>
+                    <h4 class="concept-title">Technologie</h4>
+                    <ul class="concept-list">
+                        <li class="concept-item"><strong>Performance</strong> — Gains mesurables, ROI court terme</li>
+                        <li class="concept-item"><strong>Projet</strong> — Début et fin définis</li>
+                        <li class="concept-item"><strong>Expérimentation</strong> — Tests, itérations, pivots</li>
+                        <li class="concept-item"><strong>Réversibilité</strong> — Options ouvertes</li>
+                    </ul>
+                </div>
+                <div class="concept-arrow">↓</div>
+                <div class="concept-card dark">
+                    <p class="concept-label">Après</p>
+                    <h4 class="concept-title">Infrastructure</h4>
+                    <ul class="concept-list">
+                        <li class="concept-item"><strong>Puissance</strong> — Capacité structurante, souveraineté</li>
+                        <li class="concept-item"><strong>Architecture</strong> — Engagement de long terme</li>
+                        <li class="concept-item"><strong>Construction</strong> — Investissement patient, capital lourd</li>
+                        <li class="concept-item"><strong>Irréversibilité</strong> — Dépendances durables</li>
+                    </ul>
+                    <p class="concept-footer">Ce n'est pas une amélioration continue. C'est un changement de nature.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-body">
+            <h3>Le paradoxe central : investir sans gouverner</h3>
+            <p>C'est ici que se situe le point de tension décisif. Les organisations savent investir dans l'IA. Elles savent lancer des initiatives, allouer des budgets, signer des partenariats, recruter des talents. En revanche, elles ne savent pas encore la gouverner.</p>
+            <p>Elles continuent de penser l'IA avec les cadres mentaux de l'innovation — expérimentation, agilité, retour sur investissement rapide — alors qu'elle obéit désormais aux logiques lourdes des infrastructures : irréversibilité, dépendances systémiques, arbitrages politiques et industriels de long terme.</p>
+            <p>Ce décalage crée une illusion de maîtrise. Les décisions structurantes s'accumulent sans être assumées comme telles. Les dépendances se forment avant même d'avoir été débattues. Et la responsabilité se dilue précisément au moment où elle devrait être portée, explicitement, au plus haut niveau de l'organisation.</p>
+            <h3>Ce que les grandes ruptures nous ont déjà appris</h3>
+            <p>Cette situation n'a rien d'inédit. Elle se trouve au cœur de toutes les grandes ruptures industrielles. Les travaux réunis dans <em>Lead and Disrupt</em> le montrent sans ambiguïté : les organisations échouent rarement face aux ruptures par manque de technologie ou d'intuition stratégique. Elles échouent parce qu'elles sont incapables de gouverner, dans la durée, la coexistence de logiques fondamentalement contradictoires.</p>
+            <p>L'intelligence artificielle place aujourd'hui dirigeants et conseils d'administration exactement face à cette épreuve. Non comme un défi d'innovation supplémentaire, mais comme une mise à l'épreuve de leur maturité stratégique.</p>
+        </div>
+        <div class="arbitrage-box">
+            <p class="arbitrage-label">Arbitrages immédiats</p>
+            <p class="arbitrage-sublabel">À discuter lors du prochain board meeting</p>
+            <ul class="arbitrage-list">
+                <li class="arbitrage-item"><strong>Qui porte aujourd'hui la responsabilité de l'IA comme infrastructure critique au plus haut niveau ?</strong></li>
+                <li class="arbitrage-item"><strong>Quels engagements sont déjà irréversibles — sans avoir été explicitement arbitrés ?</strong></li>
+                <li class="arbitrage-item"><strong>Quels choix structurants ont été repoussés faute de cadre de gouvernance clair ?</strong></li>
+            </ul>
+        </div>
+        <div class="transition-box">
+            <p class="transition-text">Si l'IA est désormais une infrastructure, quelles tensions de gouvernance impose-t-elle réellement aux organisations ?</p>
+        </div>
+    </div>
+    </div>
+</article>
+
+<article id="article2" class="article">
+    <div class="article-accordion-header" data-target="article2-content">
+        <div class="accordion-title-group">
+            <p class="accordion-number">Article 02</p>
+            <h2 class="accordion-title">L'angle mort des dirigeants</h2>
+        </div>
+        <span class="accordion-icon">+</span>
+    </div>
+    <div id="article2-content" class="article-accordion-content">
+    <div class="article-inner">
+        <header class="article-header article-header-desktop">
+            <p class="article-number">Article 02</p>
+            <h2 class="article-title">L'angle mort des dirigeants</h2>
+            <p class="article-subtitle">Pourquoi les ruptures échouent malgré l'innovation</p>
+        </header>
+        <div class="content-body">
+            <p>Les grandes ruptures technologiques ne surprennent jamais vraiment les organisations établies. Elles sont observées, analysées, parfois même anticipées. Les dirigeants financent des laboratoires, créent des unités d'innovation, recrutent des talents réputés « disruptifs ». Pourtant, l'histoire économique est implacable : ce ne sont pas les organisations les moins innovantes qui disparaissent, mais celles qui échouent à transformer l'innovation en capacité durable.</p>
+            <p>Cet écart entre lucidité technologique et échec stratégique constitue l'un des paradoxes les plus constants du capitalisme contemporain. Il ne relève ni de l'aveuglement, ni de l'incompétence. Il relève d'un angle mort beaucoup plus profond : la gouvernance.</p>
+            <h3>L'ambidextrie : une condition structurelle, pas une posture</h3>
+            <p>C'est précisément ce que formalise <strong>Lead and Disrupt</strong>. Contrairement à une lecture simplifiée, l'ambidextrie organisationnelle n'est ni un état d'esprit, ni un équilibre subtil entre prudence et audace. Elle désigne une condition structurelle de survie face aux ruptures majeures.</p>
+            <p>Exploiter et explorer ne sont pas deux variantes d'une même activité. Ce sont deux logiques antagonistes. L'exploitation repose sur la discipline, la standardisation et la répétition. L'exploration, à l'inverse, exige l'acceptation de l'incertitude, des investissements sans retour immédiat et une tolérance explicite à l'échec.</p>
+            <p>Chercher à gouverner ces deux dynamiques avec les mêmes indicateurs, les mêmes processus et les mêmes horizons de décision revient à en sacrifier une. Dans les faits, c'est presque toujours l'exploration qui cède.</p>
+        </div>
+        <div class="visual-container">
+            <div class="visual-desktop">
+            <svg class="visual-svg" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+                <rect width="900" height="520" fill="#fafafa"/>
+                <rect x="120" y="50" width="660" height="75" fill="#142036"/>
+                <text x="450" y="85" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.08em">INTÉGRATION STRATÉGIQUE</text>
+                <text x="450" y="108" font-family="Inter, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">Leadership · Conseil d'Administration</text>
+                <line x1="280" y1="125" x2="280" y2="165" stroke="#142036" stroke-width="2"/>
+                <line x1="620" y1="125" x2="620" y2="165" stroke="#142036" stroke-width="2"/>
+                <line x1="280" y1="125" x2="620" y2="125" stroke="#142036" stroke-width="2"/>
+                <rect x="120" y="165" width="320" height="280" fill="#ffffff" stroke="#d0d0d0" stroke-width="1"/>
+                <text x="280" y="200" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#1a1a1a" text-anchor="middle" letter-spacing="0.08em">EXPLOITATION</text>
+                <line x1="200" y1="215" x2="360" y2="215" stroke="#e0e0e0" stroke-width="1"/>
+                <text x="280" y="255" font-family="EB Garamond, serif" font-size="15" fill="#1a1a1a" text-anchor="middle">Stabilité</text>
+                <text x="280" y="273" font-family="Inter, sans-serif" font-size="10" fill="#888" text-anchor="middle">Processus éprouvés, prévisibilité</text>
+                <text x="280" y="310" font-family="EB Garamond, serif" font-size="15" fill="#1a1a1a" text-anchor="middle">Optimisation</text>
+                <text x="280" y="328" font-family="Inter, sans-serif" font-size="10" fill="#888" text-anchor="middle">Amélioration continue, efficience</text>
+                <text x="280" y="365" font-family="EB Garamond, serif" font-size="15" fill="#1a1a1a" text-anchor="middle">Métriques claires</text>
+                <text x="280" y="383" font-family="Inter, sans-serif" font-size="10" fill="#888" text-anchor="middle">ROI, KPIs, performance mesurable</text>
+                <text x="280" y="420" font-family="EB Garamond, serif" font-size="15" fill="#1a1a1a" text-anchor="middle">Court terme</text>
+                <line x1="450" y1="185" x2="450" y2="425" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="6,3"/>
+                <text x="450" y="460" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#C6A157" text-anchor="middle" letter-spacing="0.1em">SÉPARATION OPÉRATIONNELLE</text>
+                <rect x="460" y="165" width="320" height="280" fill="#ffffff" stroke="#d0d0d0" stroke-width="1"/>
+                <text x="620" y="200" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#1a1a1a" text-anchor="middle" letter-spacing="0.08em">EXPLORATION</text>
+                <line x1="540" y1="215" x2="700" y2="215" stroke="#e0e0e0" stroke-width="1"/>
+                <text x="620" y="255" font-family="EB Garamond, serif" font-size="15" fill="#1a1a1a" text-anchor="middle">Incertitude</text>
+                <text x="620" y="273" font-family="Inter, sans-serif" font-size="10" fill="#888" text-anchor="middle">Expérimentation, tolérance à l'échec</text>
+                <text x="620" y="310" font-family="EB Garamond, serif" font-size="15" fill="#1a1a1a" text-anchor="middle">Construction</text>
+                <text x="620" y="328" font-family="Inter, sans-serif" font-size="10" fill="#888" text-anchor="middle">Capacités futures, nouveaux modèles</text>
+                <text x="620" y="365" font-family="EB Garamond, serif" font-size="15" fill="#1a1a1a" text-anchor="middle">Investissement patient</text>
+                <text x="620" y="383" font-family="Inter, sans-serif" font-size="10" fill="#888" text-anchor="middle">Sans retour immédiat visible</text>
+                <text x="620" y="420" font-family="EB Garamond, serif" font-size="15" fill="#1a1a1a" text-anchor="middle">Long terme</text>
+                <text x="450" y="500" font-family="EB Garamond, serif" font-size="13" fill="#666666" text-anchor="middle" font-style="italic">L'ambidextrie ne se délègue pas. Elle se gouverne au sommet.</text>
+            </svg>
+            </div>
+            <div class="visual-mobile">
+                <div class="concept-card dark">
+                    <p class="concept-label">Au sommet</p>
+                    <h4 class="concept-title">Intégration stratégique</h4>
+                    <p class="concept-item" style="border:none;padding-top:0;">Leadership · Conseil d'Administration</p>
+                </div>
+                <div class="concept-grid">
+                    <div class="concept-card">
+                        <p class="concept-label">Logique 1</p>
+                        <h4 class="concept-title">Exploitation</h4>
+                        <ul class="concept-list">
+                            <li class="concept-item"><strong>Stabilité</strong></li>
+                            <li class="concept-item"><strong>Optimisation</strong></li>
+                            <li class="concept-item"><strong>Métriques claires</strong></li>
+                            <li class="concept-item"><strong>Court terme</strong></li>
+                        </ul>
+                    </div>
+                    <div class="concept-card">
+                        <p class="concept-label">Logique 2</p>
+                        <h4 class="concept-title">Exploration</h4>
+                        <ul class="concept-list">
+                            <li class="concept-item"><strong>Incertitude</strong></li>
+                            <li class="concept-item"><strong>Construction</strong></li>
+                            <li class="concept-item"><strong>Investissement patient</strong></li>
+                            <li class="concept-item"><strong>Long terme</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="concept-footer" style="margin-top:1rem;border:none;padding-top:0;">L'ambidextrie ne se délègue pas. Elle se gouverne au sommet.</p>
+            </div>
+        </div>
+        <div class="content-body">
+            <h3>Quand l'innovation est là, mais pas la gouvernance</h3>
+            <p><strong>Kodak</strong> a inventé la photographie numérique. <strong>Nokia</strong> a dominé la téléphonie mobile mondiale au moment même où l'écosystème des smartphones émergeait. Dans les deux cas, la technologie était présente. La vision initiale aussi. Ce qui a manqué, ce n'est pas l'innovation, mais la capacité à gouverner une transition qui remettait en cause les fondations mêmes du modèle existant.</p>
+            <p>La rupture n'a pas été combattue ; elle a été administrée jusqu'à l'asphyxie.</p>
+            <h3>L'apport décisif de Lead and Disrupt</h3>
+            <p>L'ambidextrie ne consiste pas à demander aux mêmes équipes de faire deux choses incompatibles. Elle repose sur une architecture de gouvernance précise. D'un côté, une séparation opérationnelle claire : des unités dédiées à l'exploration, protégées des métriques et des arbitrages de court terme. De l'autre, une intégration stratégique au sommet : la responsabilité explicite du leadership de maintenir la cohérence de l'ensemble.</p>
+            <p>L'ambidextrie ne supprime pas la tension ; elle la rend gouvernable. Elle déplace la complexité là où elle doit être traitée : au sommet.</p>
+        </div>
+        <div class="arbitrage-box">
+            <p class="arbitrage-label">Arbitrages immédiats</p>
+            <p class="arbitrage-sublabel">À discuter lors du prochain board meeting</p>
+            <ul class="arbitrage-list">
+                <li class="arbitrage-item"><strong>Nos unités d'exploration sont-elles réellement protégées des métriques de court terme ?</strong></li>
+                <li class="arbitrage-item"><strong>Qui porte, au niveau du board, la responsabilité explicite d'intégrer exploitation et exploration ?</strong></li>
+                <li class="arbitrage-item"><strong>Quelles décisions structurantes avons-nous fragmentées ou retardées pour préserver le consensus ?</strong></li>
+            </ul>
+        </div>
+        <div class="transition-box">
+            <p class="transition-text">Si la rupture est une question d'architecture, sur quels piliers concrets repose aujourd'hui l'intelligence artificielle ?</p>
+        </div>
+    </div>
+    </div>
+</article>
+
+<article id="article3" class="article">
+    <div class="article-accordion-header" data-target="article3-content">
+        <div class="accordion-title-group">
+            <p class="accordion-number">Article 03</p>
+            <h2 class="accordion-title">La stack IA — Le socle invisible</h2>
+        </div>
+        <span class="accordion-icon">+</span>
+    </div>
+    <div id="article3-content" class="article-accordion-content">
+    <div class="article-inner">
+        <header class="article-header article-header-desktop">
+            <p class="article-number">Article 03</p>
+            <h2 class="article-title">La stack IA — Le socle invisible</h2>
+            <p class="article-subtitle">Énergie, semi-conducteurs, infrastructures</p>
+        </header>
+        <div class="content-body">
+            <p>Les ruptures technologiques échouent rarement là où elles sont visibles. Elles échouent presque toujours là où elles sont lourdes, lentes et politiquement inconfortables. L'intelligence artificielle ne fait pas exception.</p>
+            <p>C'est précisément ce que révèle la lecture de la stack IA proposée par <strong>Jensen Huang</strong> : avant d'être une révolution logicielle, l'IA est une infrastructure industrielle lourde. Et toute infrastructure engage des arbitrages que l'on ne peut ni accélérer artificiellement, ni corriger aisément une fois engagés.</p>
+            <h3>L'énergie : le prérequis que l'on aimerait négocier</h3>
+            <p>L'IA est aujourd'hui l'une des industries les plus intensives en énergie jamais construites. Les « AI factories » consomment des volumes d'électricité comparables à ceux de complexes industriels lourds. Or, dans de nombreuses organisations, l'énergie reste traitée comme un sujet de conformité ou de reporting ESG. Elle est rarement assumée comme ce qu'elle est devenue : un facteur de puissance non négociable.</p>
+            <h3>Les semi-conducteurs : l'illusion confortable de l'avance technologique</h3>
+            <p>Les semi-conducteurs ne sont pas qu'un exploit d'ingénierie ; ils sont d'abord une industrie manufacturière lourde. Confondre avance technologique et maîtrise industrielle est une erreur classique de gouvernance dans les grandes ruptures.</p>
+            <h3>Les infrastructures physiques : le temps long que l'on ne peut pas accélérer</h3>
+            <p>Contrairement au logiciel, ces infrastructures obéissent à des délais incompressibles. Construire une capacité de calcul industrielle prend des années, mobilise des capitaux massifs et engage des choix quasi irréversibles.</p>
+        </div>
+        <div class="visual-container">
+            <div class="visual-desktop">
+            <svg class="visual-svg" viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg">
+                <rect width="900" height="560" fill="#fafafa"/>
+                <rect x="250" y="50" width="400" height="65" fill="#f0f0f0" stroke="#e0e0e0" stroke-width="1"/>
+                <text x="450" y="82" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#bbb" text-anchor="middle" letter-spacing="0.08em">APPLICATIONS</text>
+                <text x="450" y="100" font-family="Inter, sans-serif" font-size="10" fill="#ccc" text-anchor="middle">Diffusion · Usages · Adoption</text>
+                <rect x="250" y="125" width="400" height="65" fill="#f0f0f0" stroke="#e0e0e0" stroke-width="1"/>
+                <text x="450" y="157" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#bbb" text-anchor="middle" letter-spacing="0.08em">MODÈLES</text>
+                <text x="450" y="175" font-family="Inter, sans-serif" font-size="10" fill="#ccc" text-anchor="middle">Frontier models · Modèles spécialisés</text>
+                <rect x="250" y="200" width="400" height="65" fill="#f0f0f0" stroke="#e0e0e0" stroke-width="1"/>
+                <text x="450" y="232" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#bbb" text-anchor="middle" letter-spacing="0.08em">STANDARDS LOGICIELS</text>
+                <text x="450" y="250" font-family="Inter, sans-serif" font-size="10" fill="#ccc" text-anchor="middle">CUDA · Frameworks · Open source</text>
+                <rect x="250" y="275" width="400" height="85" fill="#1a2a45" stroke="#142036" stroke-width="2"/>
+                <text x="450" y="312" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.08em">SEMI-CONDUCTEURS</text>
+                <text x="450" y="335" font-family="Inter, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">Fabrication · Échelle · Chaînes d'approvisionnement</text>
+                <rect x="250" y="370" width="400" height="95" fill="#142036" stroke="#0f1a2a" stroke-width="2"/>
+                <text x="450" y="410" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.08em">ÉNERGIE</text>
+                <text x="450" y="435" font-family="Inter, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">AI factories · Intensité énergétique · Prérequis non négociable</text>
+                <text x="220" y="82" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#bbb" text-anchor="end" letter-spacing="0.1em">RAPIDE</text>
+                <line x1="230" y1="115" x2="230" y2="445" stroke="#d0d0d0" stroke-width="1"/>
+                <polygon points="230,445 226,428 234,428" fill="#142036"/>
+                <text x="220" y="420" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#666" text-anchor="end" letter-spacing="0.1em">LENT</text>
+                <text x="220" y="435" font-family="Inter, sans-serif" font-size="9" fill="#142036" text-anchor="end">10-20 ans</text>
+                <rect x="245" y="270" width="410" height="200" fill="none" stroke="#142036" stroke-width="3"/>
+                <text x="450" y="515" font-family="EB Garamond, serif" font-size="13" fill="#666666" text-anchor="middle" font-style="italic">Ce qui est lent et lourd décide du reste.</text>
+            </svg>
+            </div>
+            <div class="visual-mobile">
+                <div class="concept-card" style="opacity:0.5;">
+                    <p class="concept-label">Couche haute</p>
+                    <h4 class="concept-title" style="font-size:1.1rem;">Applications · Modèles · Standards</h4>
+                    <p class="concept-item" style="border:none;font-size:0.9rem;">Rapide, visible, mais dépendant du socle</p>
+                </div>
+                <div class="concept-arrow">↓</div>
+                <div class="concept-card dark">
+                    <p class="concept-label">Focus — Couches basses</p>
+                    <h4 class="concept-title">Le socle invisible</h4>
+                    <ul class="concept-list">
+                        <li class="concept-item"><strong>Semi-conducteurs</strong> — Fabrication, échelle, chaînes d'approvisionnement</li>
+                        <li class="concept-item"><strong>Énergie</strong> — AI factories, intensité énergétique, prérequis non négociable</li>
+                    </ul>
+                    <p class="concept-footer">Lent (10-20 ans) · Lourd · Irréversible</p>
+                </div>
+                <p class="concept-footer">Ce qui est lent et lourd décide du reste.</p>
+            </div>
+        </div>
+        <div class="content-body">
+            <p>Rendre visibles ces couches, c'est forcer les dirigeants à reconnaître que le véritable risque n'est pas d'investir trop tôt, mais de sous-investir trop longtemps dans ce qui ne produit pas immédiatement de performance mesurable.</p>
+        </div>
+        <div class="arbitrage-box">
+            <p class="arbitrage-label">Arbitrages immédiats</p>
+            <p class="arbitrage-sublabel">À discuter lors du prochain board meeting</p>
+            <ul class="arbitrage-list">
+                <li class="arbitrage-item"><strong>Quels investissements acceptons-nous de porter sans retour visible avant dix ou quinze ans ?</strong></li>
+                <li class="arbitrage-item"><strong>Quelles dépendances énergétiques et industrielles assumons-nous explicitement ?</strong></li>
+                <li class="arbitrage-item"><strong>Quelle part de notre stratégie IA repose sur des infrastructures que nous ne contrôlons pas ?</strong></li>
+            </ul>
+        </div>
+        <div class="transition-box">
+            <p class="transition-text">Si le socle de l'IA est aussi contraignant, où se joue alors réellement le pouvoir stratégique ?</p>
+        </div>
+    </div>
+    </div>
+</article>
+
+<article id="article4" class="article">
+    <div class="article-accordion-header" data-target="article4-content">
+        <div class="accordion-title-group">
+            <p class="accordion-number">Article 04</p>
+            <h2 class="accordion-title">La stack IA — Le pouvoir silencieux</h2>
+        </div>
+        <span class="accordion-icon">+</span>
+    </div>
+    <div id="article4-content" class="article-accordion-content">
+    <div class="article-inner">
+        <header class="article-header article-header-desktop">
+            <p class="article-number">Article 04</p>
+            <h2 class="article-title">La stack IA — Le pouvoir silencieux</h2>
+            <p class="article-subtitle">Standards, modèles, applications</p>
+        </header>
+        <div class="content-body">
+            <p>Si les couches basses de l'intelligence artificielle concentrent les investissements les plus lourds et les engagements les plus irréversibles, ce sont souvent les couches supérieures qui déterminent, à bas bruit, la répartition réelle du pouvoir. C'est là que se joue une part décisive de la domination future — non pas par la force visible de la technologie, mais par la structuration des usages, des dépendances et des trajectoires d'apprentissage.</p>
+            <h3>Le pouvoir des standards : l'infrastructure invisible</h3>
+            <p>Les grandes ruptures industrielles ne se gagnent jamais uniquement par de meilleurs produits. Elles se gagnent par la capacité à imposer des standards autour desquels un écosystème entier s'organise.</p>
+            <p><strong>CUDA</strong> illustre parfaitement cette logique. Développée sur plusieurs décennies, cette infrastructure logicielle n'est ni spectaculaire ni directement monétisable au sens classique. Elle n'en est pas moins l'un des piliers les plus puissants de l'écosystème IA contemporain.</p>
+            <p>L'<strong>open source</strong> joue un rôle complémentaire mais tout aussi stratégique. Loin d'être un simple choix philosophique, il constitue un accélérateur systémique : il abaisse les barrières à l'entrée, diffuse rapidement les compétences et permet à des écosystèmes entiers de monter en maturité à grande vitesse.</p>
+            <h3>Les modèles : la fascination pour le sommet de la pyramide</h3>
+            <p>La grande majorité de la valeur créée par l'IA ne provient pas de quelques modèles généralistes ultra-performants, mais de la prolifération massive de modèles spécialisés, souvent discrets, conçus pour des usages industriels, scientifiques ou sectoriels précis.</p>
+            <p>La valeur se déplace progressivement de la prouesse algorithmique vers la capacité d'intégration.</p>
+            <h3>Les applications : là où les ruptures s'ancrent — ou s'évanouissent</h3>
+            <p>L'histoire industrielle est constante : les grandes ruptures ne se gagnent pas dans les laboratoires, mais dans la diffusion. L'électricité n'a pas transformé les économies parce qu'elle a été inventée, mais parce qu'elle a été appliquée plus vite, plus largement et plus profondément que ses alternatives.</p>
+            <p>La vitesse d'adoption, l'acceptation sociale et la capacité à transformer les usages réels priment désormais sur l'innovation initiale.</p>
+        </div>
+        <div class="visual-container">
+            <div class="visual-desktop">
+            <svg class="visual-svg" viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg">
+                <rect width="900" height="560" fill="#fafafa"/>
+                <rect x="250" y="50" width="400" height="80" fill="#142036" stroke="#0f1a2a" stroke-width="2"/>
+                <text x="450" y="85" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.08em">APPLICATIONS</text>
+                <text x="450" y="108" font-family="Inter, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">Diffusion · Usages · Adoption · Transformation</text>
+                <rect x="250" y="140" width="400" height="80" fill="#1a2a45" stroke="#142036" stroke-width="2"/>
+                <text x="450" y="175" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.08em">MODÈLES</text>
+                <text x="450" y="198" font-family="Inter, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">Frontier models · Modèles spécialisés · Intégration</text>
+                <rect x="250" y="230" width="400" height="80" fill="#2d4a6f" stroke="#1a2a45" stroke-width="2"/>
+                <text x="450" y="265" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.08em">STANDARDS LOGICIELS</text>
+                <text x="450" y="288" font-family="Inter, sans-serif" font-size="10" fill="#b0b0b0" text-anchor="middle">CUDA · Frameworks · Open source · Écosystèmes</text>
+                <rect x="250" y="320" width="400" height="65" fill="#f0f0f0" stroke="#e0e0e0" stroke-width="1"/>
+                <text x="450" y="352" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#bbb" text-anchor="middle" letter-spacing="0.08em">SEMI-CONDUCTEURS</text>
+                <rect x="250" y="395" width="400" height="65" fill="#f0f0f0" stroke="#e0e0e0" stroke-width="1"/>
+                <text x="450" y="427" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#bbb" text-anchor="middle" letter-spacing="0.08em">ÉNERGIE</text>
+                <rect x="245" y="45" width="410" height="270" fill="none" stroke="#142036" stroke-width="3"/>
+                <text x="220" y="85" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#666" text-anchor="end" letter-spacing="0.1em">VISIBLE</text>
+                <text x="680" y="85" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#666" text-anchor="start" letter-spacing="0.1em">SPECTACULAIRE</text>
+                <line x1="230" y1="105" x2="230" y2="290" stroke="#142036" stroke-width="1"/>
+                <polygon points="230,290 226,273 234,273" fill="#142036"/>
+                <text x="220" y="275" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#666" text-anchor="end" letter-spacing="0.1em">INVISIBLE</text>
+                <text x="680" y="275" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#666" text-anchor="start" letter-spacing="0.1em">STRUCTURANT</text>
+                <text x="450" y="515" font-family="EB Garamond, serif" font-size="13" fill="#666666" text-anchor="middle" font-style="italic">Le pouvoir n'est pas là où l'attention se porte.</text>
+            </svg>
+            </div>
+            <div class="visual-mobile">
+                <div class="concept-card dark">
+                    <p class="concept-label">Focus — Couches hautes</p>
+                    <h4 class="concept-title">Le pouvoir silencieux</h4>
+                    <ul class="concept-list">
+                        <li class="concept-item"><strong>Applications</strong> — Diffusion, usages, adoption, transformation</li>
+                        <li class="concept-item"><strong>Modèles</strong> — Frontier models, modèles spécialisés, intégration</li>
+                        <li class="concept-item"><strong>Standards logiciels</strong> — CUDA, frameworks, open source, écosystèmes</li>
+                    </ul>
+                    <p class="concept-footer">Visible · Spectaculaire · Mais structurant</p>
+                </div>
+                <div class="concept-arrow">↓</div>
+                <div class="concept-card" style="opacity:0.5;">
+                    <p class="concept-label">Couches basses</p>
+                    <h4 class="concept-title" style="font-size:1.1rem;">Semi-conducteurs · Énergie</h4>
+                    <p class="concept-item" style="border:none;font-size:0.9rem;">Invisible mais fondamental</p>
+                </div>
+                <p class="concept-footer">Le pouvoir n'est pas là où l'attention se porte.</p>
+            </div>
+        </div>
+        <div class="content-body">
+            <p>C'est ici que se niche l'erreur de gouvernance la plus fréquente : surinvestir ce qui est visible, mesurable et immédiatement valorisable, tout en sous-investissant l'architecture invisible qui conditionnera la liberté d'action future.</p>
+        </div>
+        <div class="arbitrage-box">
+            <p class="arbitrage-label">Arbitrages immédiats</p>
+            <p class="arbitrage-sublabel">À discuter lors du prochain board meeting</p>
+            <ul class="arbitrage-list">
+                <li class="arbitrage-item"><strong>Quels standards adoptons-nous aujourd'hui sans débat explicite au niveau du board ?</strong></li>
+                <li class="arbitrage-item"><strong>Où se crée réellement la valeur dans l'écosystème que nous rejoignons ?</strong></li>
+                <li class="arbitrage-item"><strong>Sommes-nous contributeurs ou simples consommateurs des architectures qui structurent notre secteur ?</strong></li>
+            </ul>
+        </div>
+        <div class="transition-box">
+            <p class="transition-text">Que se passe-t-il lorsque cette ambidextrie dépasse l'entreprise et devient une question de puissance entre États et alliances ?</p>
+        </div>
+    </div>
+    </div>
+</article>
+
+<article id="article5" class="article">
+    <div class="article-accordion-header" data-target="article5-content">
+        <div class="accordion-title-group">
+            <p class="accordion-number">Article 05</p>
+            <h2 class="accordion-title">Quand l'ambidextrie devient géopolitique</h2>
+        </div>
+        <span class="accordion-icon">+</span>
+    </div>
+    <div id="article5-content" class="article-accordion-content">
+    <div class="article-inner">
+        <header class="article-header article-header-desktop">
+            <p class="article-number">Article 05</p>
+            <h2 class="article-title">Quand l'ambidextrie devient géopolitique</h2>
+            <p class="article-subtitle">Puissance, rivalités et alliances</p>
+        </header>
+        <div class="content-body">
+            <p>Les grandes ruptures technologiques cessent d'être des enjeux managériaux le jour où elles deviennent des infrastructures. À partir de ce point de bascule, l'ambidextrie — longtemps pensée comme une compétence organisationnelle — quitte le périmètre de l'entreprise pour s'imposer au niveau des États, des alliances et des systèmes économiques entiers.</p>
+            <h3>La Chine : une ambidextrie pilotée par l'État</h3>
+            <p>La trajectoire chinoise constitue un cas d'école. Ce qui se dessine est une ambidextrie explicitement pilotée par l'État, fondée sur une cohérence rare entre plusieurs dimensions clés : énergie, industrialisation, formation, standards logiciels et diffusion des usages.</p>
+            <p>L'accès à une énergie abondante et continuellement étendue constitue le socle de cette stratégie. L'<strong>open source</strong> y joue un rôle central : non comme renoncement à la valeur, mais comme accélérateur d'apprentissage collectif.</p>
+            <h3>Nuances indispensables : la face cachée de la cohérence</h3>
+            <p>Lire cette trajectoire sans nuance conduirait à une forme d'admiration béate, intellectuellement paresseuse et stratégiquement dangereuse. Toute ambidextrie pilotée par l'État comporte ses propres fragilités. La centralisation des décisions crée des rigidités structurelles. Les dépendances à l'appareil étatique peuvent ralentir l'adaptation.</p>
+            <h3>Le risque stratégique du retrait : se retirer, c'est désapprendre</h3>
+            <p>Se retirer d'un écosystème majeur, ce n'est pas seulement renoncer à des parts de marché. C'est se priver d'un espace d'apprentissage, d'expérimentation et d'influence sur les standards et les usages émergents.</p>
+            <p>Dans une rupture infrastructurelle, l'isolement n'est pas une protection. C'est une faiblesse structurelle.</p>
+            <h3>Alliances technologiques : vers une souveraineté relationnelle</h3>
+            <p>La souveraineté ne peut plus être pensée comme une autonomie absolue. La véritable question n'est donc pas l'indépendance, mais la capacité à structurer des interdépendances choisies.</p>
+            <p>Cette logique conduit à une forme de <strong>souveraineté relationnelle</strong>, dans laquelle la puissance se mesure moins à la capacité de tout produire seul qu'à celle de coordonner des écosystèmes complexes sur le long terme.</p>
+        </div>
+        <div class="visual-container">
+            <div class="visual-desktop">
+            <svg class="visual-svg" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+                <rect width="900" height="500" fill="#fafafa"/>
+                <circle cx="450" cy="235" r="185" fill="#142036" stroke="#0f1a2a" stroke-width="2"/>
+                <circle cx="450" cy="235" r="130" fill="#1a2a45" stroke="#142036" stroke-width="2"/>
+                <circle cx="450" cy="235" r="75" fill="#ffffff" stroke="#d0d0d0" stroke-width="2"/>
+                <text x="450" y="225" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle" letter-spacing="0.08em">ORGANISATION</text>
+                <text x="450" y="245" font-family="Inter, sans-serif" font-size="9" fill="#888" text-anchor="middle">CEO · Board · Gouvernance</text>
+                <text x="450" y="130" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.08em">ÉCOSYSTÈMES</text>
+                <text x="450" y="148" font-family="Inter, sans-serif" font-size="9" fill="#a0a0a0" text-anchor="middle">Partenaires · Fournisseurs · Standards</text>
+                <text x="450" y="70" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.08em">ÉTATS &amp; ALLIANCES</text>
+                <text x="450" y="88" font-family="Inter, sans-serif" font-size="9" fill="#a0a0a0" text-anchor="middle">Politiques industrielles · Souveraineté · Géopolitique</text>
+                <text x="450" y="470" font-family="EB Garamond, serif" font-size="13" fill="#666666" text-anchor="middle" font-style="italic">L'ambidextrie se joue désormais aux trois niveaux simultanément.</text>
+            </svg>
+            </div>
+            <div class="visual-mobile">
+                <div class="concept-circles">
+                    <div class="concept-circle outer">
+                        <p class="concept-circle-label">Niveau 3 — Macro</p>
+                        <p class="concept-circle-title">États &amp; Alliances</p>
+                    </div>
+                    <div class="concept-circle middle">
+                        <p class="concept-circle-label">Niveau 2 — Méso</p>
+                        <p class="concept-circle-title">Écosystèmes</p>
+                    </div>
+                    <div class="concept-circle inner">
+                        <p class="concept-circle-label">Niveau 1 — Micro</p>
+                        <p class="concept-circle-title">Organisation</p>
+                    </div>
+                </div>
+                <p class="concept-footer">L'ambidextrie se joue désormais aux trois niveaux simultanément.</p>
+            </div>
+        </div>
+        <div class="arbitrage-box">
+            <p class="arbitrage-label">Arbitrages immédiats</p>
+            <p class="arbitrage-sublabel">À discuter lors du prochain board meeting</p>
+            <ul class="arbitrage-list">
+                <li class="arbitrage-item"><strong>Quelles interdépendances avons-nous choisies — et lesquelles subissons-nous par défaut ?</strong></li>
+                <li class="arbitrage-item"><strong>Notre stratégie d'alliances est-elle explicitement arbitrée au niveau du board ?</strong></li>
+                <li class="arbitrage-item"><strong>Quelle est notre position dans les écosystèmes qui structureront l'économie de demain ?</strong></li>
+            </ul>
+        </div>
+        <div class="transition-box">
+            <p class="transition-text">Quel rôle exact doivent désormais jouer les dirigeants et les conseils d'administration dans la gouvernance d'une infrastructure qui dépasse largement le périmètre de leur organisation ?</p>
+        </div>
+    </div>
+    </div>
+</article>
+
+<article id="article6" class="article">
+    <div class="article-accordion-header" data-target="article6-content">
+        <div class="accordion-title-group">
+            <p class="accordion-number">Article 06</p>
+            <h2 class="accordion-title">Le véritable test des boards</h2>
+        </div>
+        <span class="accordion-icon">+</span>
+    </div>
+    <div id="article6-content" class="article-accordion-content">
+    <div class="article-inner">
+        <header class="article-header article-header-desktop">
+            <p class="article-number">Article 06</p>
+            <h2 class="article-title">Le véritable test des boards</h2>
+            <p class="article-subtitle">Gouverner l'IA comme une organisation ambidextre</p>
+        </header>
+        <div class="content-body">
+            <p>Lorsque l'intelligence artificielle devient une infrastructure structurante, elle déplace le centre de gravité de la décision. Ce qui relevait hier de choix technologiques ou opérationnels devient aujourd'hui un enjeu de gouvernance au plus haut niveau. À ce stade, l'IA ne teste plus la capacité d'innovation des organisations ; elle met à l'épreuve la maturité des dirigeants et des conseils d'administration.</p>
+            <h3>Repositionner l'IA au niveau du board : de la délégation à la responsabilité</h3>
+            <p>La première rupture est institutionnelle. Tant que l'IA reste déléguée à l'IT, à la data ou à l'innovation, elle est mécaniquement traitée comme un moyen. Or une infrastructure ne se délègue pas : elle se gouverne.</p>
+            <p>L'IA engage des investissements lourds, souvent sans retour visible à court terme. Elle expose l'organisation à des risques systémiques qui dépassent largement le périmètre d'un comité spécialisé.</p>
+            <h3>Gouverner le travail augmenté, pas la substitution</h3>
+            <p>La distinction entre <strong>tâche</strong> et <strong>métier</strong> est ici déterminante. Les tâches peuvent être automatisées, recomposées ou augmentées. Les métiers, eux, portent une finalité, un jugement et une responsabilité qui demeurent profondément humains.</p>
+            <p>Les entreprises qui gouvernent l'IA sous l'angle de la substitution s'inscrivent dans une logique d'exploitation défensive. Celles qui la gouvernent comme un amplificateur de jugement humain investissent dans une logique d'exploration durable.</p>
+            <h3>Orchestrer des écosystèmes plutôt qu'optimiser des silos</h3>
+            <p>L'IA rend définitivement obsolète l'illusion de l'autonomie stratégique. Aucune organisation ne maîtrise seule l'ensemble de la stack. Le leadership ne se mesure plus à la capacité de contrôle, mais à la capacité d'orchestration.</p>
+            <h3>Trois décisions irréductibles pour les boards</h3>
+            <p>Toute gouvernance sérieuse de l'IA confronte les dirigeants et les conseils à trois décisions qui ne peuvent être ni déléguées ni contournées :</p>
+            <p><strong>Accepter des investissements incompatibles avec les métriques actuelles.</strong> Une infrastructure se construit avant d'être rentable.</p>
+            <p><strong>Assumer des dépendances plutôt que de les nier.</strong> Toute architecture crée des interdépendances. La question n'est pas de les éviter, mais de les choisir.</p>
+            <p><strong>Arbitrer publiquement des tensions inconfortables</strong> : entre court et long terme, ouverture et contrôle, performance immédiate et puissance future.</p>
+        </div>
+        <div class="visual-container">
+            <div class="visual-desktop">
+            <svg class="visual-svg" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+                <rect width="900" height="500" fill="#fafafa"/>
+                <polygon points="450,60 180,380 720,380" fill="#f8f9fa" stroke="#142036" stroke-width="2"/>
+                <circle cx="450" cy="265" r="65" fill="#142036" stroke="#0f1a2a" stroke-width="2"/>
+                <text x="450" y="255" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.05em">RESPONSABILITÉ</text>
+                <text x="450" y="273" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="0.05em">DU BOARD</text>
+                <line x1="450" y1="200" x2="450" y2="115" stroke="#142036" stroke-width="1" stroke-dasharray="4,2"/>
+                <line x1="395" y1="305" x2="280" y2="355" stroke="#142036" stroke-width="1" stroke-dasharray="4,2"/>
+                <line x1="505" y1="305" x2="620" y2="355" stroke="#142036" stroke-width="1" stroke-dasharray="4,2"/>
+                <circle cx="450" cy="85" r="42" fill="#ffffff" stroke="#142036" stroke-width="2"/>
+                <text x="450" y="80" font-family="EB Garamond, serif" font-size="13" fill="#1a1a1a" text-anchor="middle">Capital</text>
+                <text x="450" y="97" font-family="EB Garamond, serif" font-size="13" fill="#1a1a1a" text-anchor="middle">long terme</text>
+                <text x="450" y="35" font-family="Inter, sans-serif" font-size="9" fill="#142036" text-anchor="middle">Investir sans certitude</text>
+                <circle cx="230" cy="370" r="42" fill="#ffffff" stroke="#142036" stroke-width="2"/>
+                <text x="230" y="365" font-family="EB Garamond, serif" font-size="13" fill="#1a1a1a" text-anchor="middle">Dépendances</text>
+                <text x="230" y="382" font-family="EB Garamond, serif" font-size="13" fill="#1a1a1a" text-anchor="middle">assumées</text>
+                <text x="140" y="415" font-family="Inter, sans-serif" font-size="9" fill="#142036" text-anchor="start">Choisir ses interdépendances</text>
+                <circle cx="670" cy="370" r="42" fill="#ffffff" stroke="#142036" stroke-width="2"/>
+                <text x="670" y="365" font-family="EB Garamond, serif" font-size="13" fill="#1a1a1a" text-anchor="middle">Arbitrages</text>
+                <text x="670" y="382" font-family="EB Garamond, serif" font-size="13" fill="#1a1a1a" text-anchor="middle">inconfortables</text>
+                <text x="760" y="415" font-family="Inter, sans-serif" font-size="9" fill="#142036" text-anchor="end">Trancher entre court et long terme</text>
+                <text x="450" y="465" font-family="EB Garamond, serif" font-size="13" fill="#666666" text-anchor="middle" font-style="italic">Gouverner l'IA, c'est assumer ce qui ne se délègue plus.</text>
+            </svg>
+            </div>
+            <div class="visual-mobile">
+                <div class="concept-triangle">
+                    <div class="concept-triangle-center">
+                        <p class="concept-label" style="color:var(--alides-gold);">Au centre</p>
+                        <h4 class="concept-title" style="margin-bottom:0;">Responsabilité du Board</h4>
+                    </div>
+                    <div class="concept-triangle-points">
+                        <div class="concept-triangle-point">
+                            <p class="concept-triangle-point-title">Capital long terme</p>
+                            <p class="concept-triangle-point-desc">Investir sans certitude de retour immédiat</p>
+                        </div>
+                        <div class="concept-triangle-point">
+                            <p class="concept-triangle-point-title">Dépendances assumées</p>
+                            <p class="concept-triangle-point-desc">Choisir ses interdépendances plutôt que les nier</p>
+                        </div>
+                        <div class="concept-triangle-point">
+                            <p class="concept-triangle-point-title">Arbitrages inconfortables</p>
+                            <p class="concept-triangle-point-desc">Trancher entre court et long terme</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="concept-footer">Gouverner l'IA, c'est assumer ce qui ne se délègue plus.</p>
+            </div>
+        </div>
+        <div class="arbitrage-box">
+            <p class="arbitrage-label">Arbitrages immédiats</p>
+            <p class="arbitrage-sublabel">À discuter lors du prochain board meeting</p>
+            <ul class="arbitrage-list">
+                <li class="arbitrage-item"><strong>Quels investissements avons-nous refusés parce qu'ils ne correspondaient pas aux métriques actuelles ?</strong></li>
+                <li class="arbitrage-item"><strong>Quelles dépendances assumons-nous explicitement — et lesquelles nions-nous encore ?</strong></li>
+                <li class="arbitrage-item"><strong>Quelles tensions inconfortables avons-nous évité d'arbitrer publiquement ?</strong></li>
+            </ul>
+        </div>
+        <div class="transition-box">
+            <p class="transition-text">Sommes-nous prêts à gouverner ce que nous ne pouvons plus déléguer ?</p>
+        </div>
+    </div>
+    </div>
+</article>
+
+<section id="conclusion" class="conclusion">
+    <div class="article-accordion-header conclusion-accordion-header" data-target="conclusion-content">
+        <div class="accordion-title-group">
+            <p class="accordion-number">Conclusion</p>
+            <h2 class="accordion-title">L'IA comme épreuve du leadership</h2>
+        </div>
+        <span class="accordion-icon">+</span>
+    </div>
+    <div id="conclusion-content" class="article-accordion-content">
+    <div class="conclusion-inner">
+        <header class="section-header article-header-desktop">
+            <p class="section-label">Conclusion</p>
+            <h2 class="section-title">L'IA comme épreuve du leadership</h2>
+        </header>
+        <div class="content-body">
+            <p>À mesure que l'intelligence artificielle s'installe au cœur des économies et des organisations, une évidence s'impose : elle agit moins comme un accélérateur technologique que comme un révélateur stratégique. Elle met à nu le rapport des dirigeants au temps long, la solidité réelle de leurs mécanismes de gouvernance et, plus profondément encore, leur capacité à arbitrer dans l'inconfort.</p>
+            <p>L'IA ne tolère ni l'ambiguïté ni les demi-décisions. Parce qu'elle prend la forme d'une infrastructure, elle exige des engagements patients, lourds et souvent irréversibles. Elle distingue rapidement les organisations qui raisonnent encore en cycles courts de celles qui acceptent d'investir dans des capacités durables, au prix d'un déséquilibre temporaire.</p>
+            <p>Les enseignements de <em>Lead and Disrupt</em> trouvent ici toute leur acuité. Les organisations ne disparaissent pas parce qu'elles manquent de technologie, ni même parce qu'elles manquent d'innovation. Elles échouent parce qu'elles ne parviennent pas à gouverner durablement la coexistence de logiques opposées : exploitation et exploration, optimisation du présent et construction du futur, performance immédiate et puissance à long terme.</p>
+            <p>L'intelligence artificielle rend cette ambidextrie non négociable. Elle oblige les dirigeants et les conseils d'administration à assumer des choix qui ne peuvent plus être délégués : investir sans certitude de retour à court terme, accepter des dépendances structurelles plutôt que les nier, ouvrir des écosystèmes tout en protégeant des actifs critiques, transformer le travail sans appauvrir le jugement humain.</p>
+            <p>C'est pourquoi survivre à la révolution de l'IA ne consiste pas à innover plus vite que les autres. Cela consiste à gouverner, dans le temps long, la coexistence de logiques fondamentalement contradictoires. À ce niveau, la technologie cesse d'être le sujet central. Le sujet devient la qualité de la gouvernance et la lucidité du leadership.</p>
+            <p>Dans ce contexte, certains acteurs jouent un rôle singulier : non pas celui de prescripteurs d'outils ou de méthodes, mais celui de lecteurs des ruptures avant qu'elles ne deviennent visibles, de partenaires exigeants des dirigeants confrontés à des décisions irréversibles, et de facilitateurs du dialogue stratégique entre CEO et boards lorsque les repères traditionnels cessent d'opérer.</p>
+            <p>Travailler sur l'architecture de leadership devient alors plus décisif que toute feuille de route technologique.</p>
+            <p>La révolution de l'IA n'est donc pas d'abord technologique. Elle est une épreuve de gouvernance, de vision et de leadership.</p>
+        </div>
+        <div class="conclusion-question">Sommes-nous capables de gouverner durablement ce que nous sommes en train de rendre irréversible ?</div>
+        <div class="signature">
+            <p class="signature-author"><a href="https://www.alides.org/eci-group-executive-search/equipe-internationale#mehdi-el-idrissi" target="_top" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.5);">Mehdi El Idrissi</a></p>
+            <p class="signature-role">Managing Partner, Alides</p>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section id="archives" class="archives">
+    <div class="archives-inner">
+        <header class="archives-header">
+            <p class="section-label">Archives</p>
+            <h2 class="archives-title">Dossiers précédents</h2>
+        </header>
+        <div class="dossier-grid">
+            <a href="https://alidesmaroc.github.io/alides-knowledge-center/dossier-q4-2025.html" class="dossier-card" target="_top">
+                <p class="dossier-quarter">Q4 2025</p>
+                <h3 class="dossier-title">Leadership sous tension</h3>
+                <p class="dossier-desc">Crise des CEO, succession et gouvernance — ce que les Boards doivent comprendre.</p>
+                <div class="dossier-meta">
+                    <span class="dossier-count">3 articles</span>
+                    <span class="dossier-link">Lire →</span>
+                </div>
+            </a>
+            <a href="https://alidesmaroc.github.io/alides-knowledge-center/dossier-ete-2025-complet.html" class="dossier-card" target="_top">
+                <p class="dossier-quarter">Été 2025</p>
+                <h3 class="dossier-title">L'été, saison des dirigeants lucides</h3>
+                <p class="dossier-desc">Gouvernance, succession, alignement, exécution — cinq leviers critiques pour la rentrée.</p>
+                <div class="dossier-meta">
+                    <span class="dossier-count">5 articles</span>
+                    <span class="dossier-link">Lire →</span>
+                </div>
+            </a>
+            <a href="https://alidesmaroc.github.io/alides-knowledge-center/dossier-q3-2025-complet.html" class="dossier-card" target="_top">
+                <p class="dossier-quarter">Q3 2025</p>
+                <h3 class="dossier-title">Gouverner sans illusion</h3>
+                <p class="dossier-desc">Ce que vos comités ne voient pas — piloter dans l'incertitude.</p>
+                <div class="dossier-meta">
+                    <span class="dossier-count">5 articles</span>
+                    <span class="dossier-link">Lire →</span>
+                </div>
+            </a>
+            <a href="https://alidesmaroc.github.io/alides-knowledge-center/dossier-q2-2025-complet.html" class="dossier-card" target="_top">
+                <p class="dossier-quarter">Q2 2025</p>
+                <h3 class="dossier-title">Succession : le moment de vérité</h3>
+                <p class="dossier-desc">Quand la transmission du pouvoir révèle la maturité d'une gouvernance.</p>
+                <div class="dossier-meta">
+                    <span class="dossier-count">5 articles</span>
+                    <span class="dossier-link">Lire →</span>
+                </div>
+            </a>
+            <a href="https://alidesmaroc.github.io/alides-knowledge-center/dossier-q1-2025-complet.html" class="dossier-card" target="_top">
+                <p class="dossier-quarter">Q1 2025</p>
+                <h3 class="dossier-title">Gouverner dans un monde fragmenté</h3>
+                <p class="dossier-desc">Ce que les PDG et les conseils doivent anticiper en 2025.</p>
+                <div class="dossier-meta">
+                    <span class="dossier-count">4 articles</span>
+                    <span class="dossier-link">Lire →</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="why">
+    <div class="why-inner">
+        <h2 class="why-title">Pourquoi un Knowledge Center ?</h2>
+        <div class="why-content">
+            <div class="why-item">
+                <h3 class="why-item-title">Structurer la pensée</h3>
+                <p class="why-item-text">Créer une collection intellectuelle cohérente sur la gouvernance, le leadership et la succession.</p>
+            </div>
+            <div class="why-item">
+                <h3 class="why-item-title">Outiller les Boards</h3>
+                <p class="why-item-text">Fournir aux conseils d'administration des analyses à forte valeur ajoutée pour éclairer leurs décisions.</p>
+            </div>
+            <div class="why-item">
+                <h3 class="why-item-title">Contribuer au Maroc</h3>
+                <p class="why-item-text">Participer à l'élévation des pratiques de gouvernance au Maroc et en Afrique.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="cta-inner">
+        <p class="cta-text">Ces analyses font écho à vos enjeux ? Échangeons.</p>
+        <div class="cta-buttons">
+            <a href="https://www.alides.org/contact" class="cta-btn" target="_top">Nous contacter</a>
+            <a href="https://www.alides.org" class="cta-btn secondary" target="_top">Découvrir Alides</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p class="footer-text">© 2026 <a href="https://www.alides.org" target="_top">Alides</a> — Knowledge Center</p>
+</footer>
+
+<script>
+(function() {
+    function isMobile() { return window.innerWidth <= 680; }
+    function init() {
+        var headers = document.querySelectorAll('.article-accordion-header');
+        for (var i = 0; i < headers.length; i++) {
+            (function(header) {
+                header.addEventListener('click', function() {
+                    if (!isMobile()) return;
+                    var targetId = this.getAttribute('data-target');
+                    var content = document.getElementById(targetId);
+                    var isActive = this.classList.contains('active');
+                    var allHeaders = document.querySelectorAll('.article-accordion-header');
+                    for (var j = 0; j < allHeaders.length; j++) {
+                        if (allHeaders[j] !== header) {
+                            allHeaders[j].classList.remove('active');
+                            var otherId = allHeaders[j].getAttribute('data-target');
+                            var otherContent = document.getElementById(otherId);
+                            if (otherContent) otherContent.classList.remove('open');
+                        }
+                    }
+                    if (isActive) { this.classList.remove('active'); content.classList.remove('open'); }
+                    else { this.classList.add('active'); content.classList.add('open'); }
+                });
+            })(headers[i]);
+        }
+        function handleResize() {
+            var contents = document.querySelectorAll('.article-accordion-content');
+            var hdrs = document.querySelectorAll('.article-accordion-header');
+            if (!isMobile()) {
+                for (var k = 0; k < contents.length; k++) contents[k].classList.add('open');
+                for (var k = 0; k < hdrs.length; k++) hdrs[k].classList.remove('active');
+            } else {
+                var anyOpen = document.querySelector('.article-accordion-content.open');
+                if (!anyOpen && hdrs.length > 0 && contents.length > 0) {
+                    hdrs[0].classList.add('active');
+                    contents[0].classList.add('open');
+                }
+            }
+        }
+        handleResize();
+        window.addEventListener('resize', function() { setTimeout(handleResize, 250); });
+    }
+    if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); }
+    else { init(); }
+})();
+</script>
+
+</body>
+</html>
