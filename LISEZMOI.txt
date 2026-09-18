@@ -17,3 +17,20 @@ Avant de publier, dans les deux fichiers HTML :
   3. Si un dossier fonts/ existe déjà sur le site, vérifier qu'il contient les mêmes fichiers ou renommer le nôtre
      (et le chemin dans les @font-face en tête de <style>).
 index.html livré ici remplace l'index actuel : seules les sections « Dernier dossier » et « Archives 2026 » et l'image de partage changent.
+
+Variante pour intégration dans la page Wix alides.org/knowledge (iframe) :
+  le-vrai-prix-dune-nomination-embed.html    sans barre de site ni pied de page (l'en-tête et le pied Wix les fournissent) ;
+  cadre-alides-valeur-nomination-embed.html  liens externes ouverts dans la fenêtre principale (target="_top") ;
+                                             les deux pages se lient entre elles en version embed.
+  À déposer au même endroit que les autres fichiers (elles utilisent fonts/), puis pointer l'élément Wix vers
+  https://revue.alides.org/le-vrai-prix-dune-nomination-embed.html
+
+  Hauteur : la page envoie sa hauteur au parent (postMessage {type:'alides-kc-height', height}) à chaque
+  changement. L'élément Wix « Intégrer un site » ignore ce message : donnez-lui une hauteur fixe généreuse
+  dans l'éditeur (le dossier fait environ 44 000 px de haut à 1 280 px de large ; sur téléphone davantage),
+  ou acceptez la barre de défilement interne. Avec Velo, un script de page peut l'écouter (à tester) :
+      $w('#html1').onMessage(e => { if (e.data && e.data.type === 'alides-kc-height') { /* ajuster la hauteur */ } });
+  Sans barre de défilement interne, le sommaire latéral ne reste pas fixe à l'écran (il défile avec la page).
+
+  La bande blanche visible au-dessus du dossier vient de la page Wix (en-tête masqué ou section vide),
+  pas du fichier : à régler dans l'éditeur Wix en remontant l'élément d'intégration au haut de la section.
