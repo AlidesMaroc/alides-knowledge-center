@@ -5,13 +5,15 @@ Fichiers à déposer à la racine du dépôt de revue.alides.org (même niveau q
   fonts/                                 7 fichiers WOFF2 + licences (chemin relatif "fonts/" : garder le dossier à côté des pages)
   og-le-vrai-prix-dune-nomination.png    image de partage (chemin déclaré dans <head> : https://revue.alides.org/og-le-vrai-prix-dune-nomination.png)
   le-vrai-prix-dune-nomination.pdf       facultatif ; la page ne pointe pas dessus
+  index.html                             page d'accueil mise à jour (nouveau « Dernier dossier », Family Offices passé en archives 2026, image de partage)
+
+Les URL canoniques des deux pages sont déjà alignées sur ces noms de fichiers
+(https://revue.alides.org/le-vrai-prix-dune-nomination.html et …/cadre-alides-valeur-nomination.html).
 
 Avant de publier, dans les deux fichiers HTML :
-  1. Si vous renommez la page selon la collection (ex. dossier-q3-2026-complet.html), mettre la même
-     valeur dans <link rel="canonical">, og:url et le JSON-LD "mainEntityOfPage"
-     (actuellement : https://revue.alides.org/dossier-q3-2026-complet.html), et dans le lien
-     "le-vrai-prix-dune-nomination.html…" de la page du Cadre.
+  1. Si vous renommez la page, reporter le nouveau nom dans <link rel="canonical">, og:url et le JSON-LD
+     "mainEntityOfPage", dans les liens de la page du Cadre et dans index.html (« Lire le dossier »).
   2. Compléter la date si un jour est fixé (actuellement 2026-09).
   3. Si un dossier fonts/ existe déjà sur le site, vérifier qu'il contient les mêmes fichiers ou renommer le nôtre
      (et le chemin dans les @font-face en tête de <style>).
-Puis ajouter la carte d'archive (knowledge-center/carte-archive.html) dans index.html.
+index.html livré ici remplace l'index actuel : seules les sections « Dernier dossier » et « Archives 2026 » et l'image de partage changent.
