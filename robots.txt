@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://revue.alides.org/sitemap.xml
