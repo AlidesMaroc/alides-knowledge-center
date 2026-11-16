@@ -1,432 +1,278 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="kYHUcOeJW4AL0czZvNiSbg94NSLl4Osi-YJinOvALH8">
-    <title>Knowledge Center — Dossiers Stratégiques | Alides</title>
-    <link rel="icon" href="/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="kYHUcOeJW4AL0czZvNiSbg94NSLl4Osi-YJinOvALH8">
+<title>Knowledge Center — Dossiers Stratégiques | Alides</title>
+<link rel="icon" href="/favicon.ico">
 
-    <link rel="canonical" href="https://revue.alides.org/">
-    <meta name="description" content="Les Dossiers Stratégiques Alides analysent les angles morts qui redéfinissent la gouvernance, la succession et la continuité des organisations patrimoniales, familiales et institutionnelles.">
+<link rel="canonical" href="https://revue.alides.org/">
+<meta name="description" content="Les Dossiers Stratégiques Alides analysent les angles morts qui redéfinissent la gouvernance, la succession et la continuité des organisations patrimoniales, familiales et institutionnelles.">
+<meta name="theme-color" content="#142036">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Knowledge Center — Dossiers Stratégiques | Alides">
-    <meta property="og:description" content="Des analyses premium sur les angles morts de la gouvernance, de la succession, du leadership et de la continuité actionnariale.">
-        <meta property="og:image" content="https://revue.alides.org/og-le-vrai-prix-dune-nomination.png">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://revue.alides.org/">
+<!-- Open Graph -->
+<meta property="og:title" content="Knowledge Center — Dossiers Stratégiques | Alides">
+<meta property="og:description" content="Des analyses premium sur les angles morts de la gouvernance, de la succession, du leadership et de la continuité actionnariale.">
+<meta property="og:image" content="https://revue.alides.org/og-le-vrai-prix-dune-nomination.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://revue.alides.org/">
+<meta property="og:site_name" content="Alides">
+<meta property="og:locale" content="fr_FR">
 
-    <meta property="og:site_name" content="Alides">
-    <meta property="og:locale" content="fr_FR">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Knowledge Center — Dossiers Stratégiques | Alides">
+<meta name="twitter:description" content="Des analyses premium sur les angles morts de la gouvernance, de la succession, du leadership et de la continuité actionnariale.">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Knowledge Center — Dossiers Stratégiques | Alides">
-    <meta name="twitter:description" content="Des analyses premium sur les angles morts de la gouvernance, de la succession, du leadership et de la continuité actionnariale.">
+<!-- Les lignes de sommaire ne sont masquées avant leur apparition que si ce script s'exécute. -->
+<script>(function(w,d){if('IntersectionObserver' in w&&!w.matchMedia('(prefers-reduced-motion:reduce)').matches){d.documentElement.className+=' js';}})(window,document);</script>
+<link rel="stylesheet" href="revue.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-            --alides-midnight: #142036;
-            --alides-midnight-light: #1a2a45;
-            --alides-gold: #C6A157;
-            --alides-gold-dark: #9E7E3A;
-            --alides-ivory: #F7F5F2;
-            --alides-warm-white: #FDFCFA;
-            --alides-white: #ffffff;
-            --alides-text: #3A3A3A;
-            --alides-text-light: #666666;
-            --alides-border: rgba(20, 32, 54, 0.08);
-            --font-title: 'EB Garamond', Georgia, serif;
-            --font-body: 'EB Garamond', Georgia, serif;
-            --font-ui: 'Inter', -apple-system, sans-serif;
-            --max-width: 1100px;
-            --max-width-narrow: 720px;
-            --space-xs: 0.5rem;
-            --space-sm: 1rem;
-            --space-md: 2.5rem;
-            --space-lg: 5rem;
-            --space-xl: 7rem;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; height: auto; overflow-x: hidden; }
-        body { min-height: 100%; height: auto; background: var(--alides-ivory); color: var(--alides-midnight); font-family: var(--font-body); font-size: 19px; line-height: 1.75; -webkit-font-smoothing: antialiased; }
-        header { width: 100%; background: var(--alides-midnight); padding: 1.2rem 2rem; position: fixed; top: 0; z-index: 100; }
-        header .inner { max-width: var(--max-width); margin: auto; display: flex; justify-content: space-between; align-items: center; }
-        header .logo { color: var(--alides-white); font-family: 'EB Garamond', Garamond, Georgia, serif; font-size: 1.6rem; font-weight: 400; letter-spacing: 0; text-decoration: none; }
-        header nav { display: flex; gap: 2.2rem; }
-        header nav a { font-family: var(--font-ui); color: rgba(247, 245, 242, 0.7); text-decoration: none; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.3s ease; }
-        header nav a:hover, header nav a.active { color: var(--alides-white); }
-        @media (max-width: 768px) {
-            header nav { gap: 0; }
-            header nav a:not(.active) { display: none; }
-            header nav a.active { font-size: 0.7rem; padding: 0.4rem 0.8rem; background: rgba(198, 161, 87, 0.15); border-radius: 3px; }
-        }
-        .hero { background: var(--alides-white); padding: calc(var(--space-xl) + 80px) 2rem var(--space-xl); text-align: center; border-bottom: 1px solid var(--alides-border); }
-        .hero-inner { max-width: var(--max-width-narrow); margin: auto; }
-        .hero-label { font-family: var(--font-ui); color: var(--alides-gold-dark); font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 1.5rem; }
-        .hero-title { font-family: var(--font-title); font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 400; color: var(--alides-midnight); margin-bottom: 2rem; line-height: 1.15; }
-        .hero-statement { font-family: var(--font-body); font-size: 1.15rem; font-weight: 400; color: var(--alides-text); line-height: 1.7; max-width: 600px; margin: 0 auto; }
-        .edito { background: var(--alides-ivory); padding: var(--space-lg) 2rem; border-bottom: 1px solid var(--alides-border); }
-        .edito-inner { max-width: var(--max-width-narrow); margin: auto; }
-        .edito-label { font-family: var(--font-ui); color: var(--alides-gold-dark); font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 2rem; text-align: center; }
-        .edito-content { font-family: var(--font-body); font-size: 1.05rem; color: var(--alides-text); line-height: 1.85; }
-        .edito-content p { margin-bottom: 1.5rem; text-align: justify; text-justify: inter-word; }
-        .edito-content p:last-of-type { margin-bottom: 0; }
-        .edito-signature { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--alides-border); text-align: right; }
-        .edito-author { font-family: var(--font-title); font-size: 1.1rem; font-weight: 500; color: var(--alides-midnight); margin-bottom: 0.3rem; }
-        .edito-role { font-family: var(--font-ui); font-size: 0.75rem; color: var(--alides-text-light); letter-spacing: 0.03em; }
-        .latest { padding: var(--space-lg) 2rem; background: var(--alides-midnight); }
-        .latest-inner { max-width: var(--max-width); margin: auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: start; }
-        @media (max-width: 900px) { .latest-inner { grid-template-columns: 1fr; gap: 2rem; } }
-        .latest-header { position: sticky; top: 120px; }
-        .latest-label { font-family: var(--font-ui); color: var(--alides-gold); font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 1rem; }
-        .latest-quarter { font-family: var(--font-ui); color: rgba(255,255,255,0.5); font-size: 0.75rem; letter-spacing: 0.1em; margin-bottom: 0.8rem; }
-        .latest-title { font-family: var(--font-title); font-size: 2.5rem; font-weight: 400; color: var(--alides-white); margin-bottom: 1rem; line-height: 1.2; }
-        .latest-subtitle { font-family: var(--font-body); font-size: 1.1rem; color: rgba(247, 245, 242, 0.7); margin-bottom: 2rem; line-height: 1.6; }
-        .latest-cta { display: inline-block; padding: 0.9rem 2rem; background: var(--alides-gold); color: var(--alides-midnight); font-family: var(--font-ui); text-decoration: none; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; transition: background 0.3s ease; }
-        .latest-cta:hover { background: var(--alides-white); }
-        .latest-articles { list-style: none; }
-        .latest-article { padding: 1.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
-        .latest-article:last-child { border-bottom: none; }
-        .latest-article-number { font-family: var(--font-ui); font-size: 0.7rem; color: var(--alides-gold); letter-spacing: 0.15em; margin-bottom: 0.5rem; }
-        .latest-article-title { font-family: var(--font-title); font-size: 1.4rem; font-weight: 500; color: var(--alides-white); margin-bottom: 0.5rem; line-height: 1.3; }
-        .latest-article-excerpt { font-size: 0.95rem; color: rgba(247, 245, 242, 0.6); line-height: 1.6; }
-        .archives { padding: var(--space-lg) 2rem; background: var(--alides-ivory); }
-        .archives-inner { max-width: var(--max-width); margin: auto; }
-        .archives-cadrage { font-family: var(--font-body); font-size: 1.1rem; font-style: italic; color: var(--alides-text); line-height: 1.65; max-width: 680px; margin: 0 auto var(--space-md); text-align: center; }
-        .year-block { margin-bottom: 3.5rem; }
-        .year-block:last-child { margin-bottom: 0; }
-        .year-label { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 0.6rem; }
-        .year-num { font-family: var(--font-title); font-size: 1.4rem; font-style: italic; color: var(--alides-midnight); font-weight: 500; letter-spacing: 0.01em; flex-shrink: 0; }
-        .year-line { flex: 1; height: 1px; background: var(--alides-border); }
-        .year-theme { font-family: var(--font-body); font-size: 0.95rem; font-style: italic; color: var(--alides-text-light); margin-bottom: 1.8rem; letter-spacing: 0.005em; }
-        .section-header { text-align: center; margin-bottom: var(--space-md); }
-        .section-label { font-family: var(--font-ui); color: var(--alides-gold-dark); font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 0.8rem; }
-        .section-title { font-family: var(--font-title); font-size: 2rem; font-weight: 400; color: var(--alides-midnight); }
-        .dossier-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dossier-card { background: var(--alides-white); padding: 2rem; border: 1px solid var(--alides-border); transition: border-color 0.3s ease; }
-        .dossier-card:hover { border-color: rgba(20, 32, 54, 0.2); }
-        .dossier-quarter { font-family: var(--font-ui); font-size: 0.7rem; color: var(--alides-text-light); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.6rem; }
-        .dossier-title { font-family: var(--font-title); font-size: 1.35rem; font-weight: 500; color: var(--alides-midnight); margin-bottom: 0.6rem; line-height: 1.3; }
-        .dossier-desc { font-size: 0.95rem; color: var(--alides-text-light); margin-bottom: 1.2rem; line-height: 1.55; }
-        .dossier-meta { display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid var(--alides-border); }
-        .dossier-count { font-family: var(--font-ui); font-size: 0.72rem; color: var(--alides-text-light); }
-        .dossier-link { font-family: var(--font-ui); font-size: 0.72rem; color: var(--alides-midnight); text-decoration: none; letter-spacing: 0.05em; padding-bottom: 0.15rem; border-bottom: 1px solid var(--alides-gold); transition: border-color 0.3s ease; }
-        .dossier-link:hover { border-color: var(--alides-midnight); }
-        .why { padding: var(--space-lg) 2rem; background: var(--alides-white); border-top: 1px solid var(--alides-border); }
-        .why-inner { max-width: var(--max-width); margin: auto; display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: start; }
-        @media (max-width: 800px) { .why-inner { grid-template-columns: 1fr; gap: 2rem; } }
-        .why-title { font-family: var(--font-title); font-size: 1.8rem; font-weight: 400; color: var(--alides-midnight); line-height: 1.3; }
-        .why-content { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-        @media (max-width: 600px) { .why-content { grid-template-columns: 1fr; } }
-        .why-item { padding-left: 1rem; border-left: 2px solid var(--alides-gold); }
-        .why-item-title { font-family: var(--font-ui); font-size: 0.75rem; font-weight: 500; color: var(--alides-midnight); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.6rem; }
-        .why-item-text { font-size: 0.95rem; color: var(--alides-text-light); line-height: 1.6; }
-        .cta { padding: var(--space-md) 2rem; background: var(--alides-midnight); text-align: center; }
-        .cta-inner { max-width: var(--max-width-narrow); margin: auto; }
-        .cta-text { font-family: var(--font-body); font-size: 1.15rem; color: rgba(247, 245, 242, 0.8); margin-bottom: 1.5rem; }
-        .cta-btn { display: inline-block; padding: 0.9rem 2.2rem; background: transparent; border: 1px solid var(--alides-gold); color: var(--alides-gold); font-family: var(--font-ui); text-decoration: none; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; transition: all 0.3s ease; }
-        .cta-btn:hover { background: var(--alides-gold); color: var(--alides-midnight); }
-        footer { background: var(--alides-midnight); padding: 2.5rem 2rem; border-top: 1px solid rgba(255,255,255,0.1); }
-        footer .inner { max-width: var(--max-width); margin: auto; display: flex; justify-content: space-between; align-items: center; }
-        footer .footer-logo { font-family: 'EB Garamond', Garamond, Georgia, serif; font-size: 1.4rem; font-weight: 400; color: var(--alides-white); letter-spacing: 0; }
-        footer .footer-links { display: flex; gap: 2rem; }
-        footer .footer-links a { color: rgba(247, 245, 242, 0.6); text-decoration: none; font-family: var(--font-ui); font-size: 0.72rem; letter-spacing: 0.05em; transition: color 0.3s ease; }
-        footer .footer-links a:hover { color: var(--alides-white); }
-        footer .footer-copy { font-family: var(--font-ui); font-size: 0.7rem; color: rgba(247, 245, 242, 0.4); }
-        @media (max-width: 768px) {
-            footer .inner { flex-direction: column; gap: 1.5rem; text-align: center; }
-            footer .footer-links { flex-wrap: wrap; justify-content: center; }
-            .hero { padding: calc(var(--space-lg) + 60px) 1.25rem var(--space-md); }
-            .hero-title { font-size: 2rem; line-height: 1.2; }
-            .hero-statement { font-size: 1rem; }
-            .edito { padding: var(--space-md) 1.25rem; }
-            .edito-content { font-size: 0.95rem; }
-            .edito-content p { text-align: left; }
-            .latest { padding: var(--space-md) 1.25rem; }
-            .latest-title { font-size: 1.8rem; }
-            .latest-subtitle { font-size: 0.95rem; }
-            .archives { padding: var(--space-md) 1.25rem; }
-            .archives-cadrage { font-size: 1rem; }
-            .year-block { margin-bottom: 2.5rem; }
-            .year-num { font-size: 1.2rem; }
-            .year-theme { font-size: 0.9rem; }
-            .dossier-grid { grid-template-columns: 1fr; gap: 1rem; }
-            .dossier-title { font-size: 1.1rem; }
-            .why { padding: var(--space-md) 1.25rem; }
-            .why-title { font-size: 1.5rem; }
-            .cta { padding: var(--space-md) 1.25rem; }
-            .cta-text { font-size: 1rem; }
-        }
-        @media (max-width: 480px) {
-            .hero-title { font-size: 1.6rem; }
-            .latest-title { font-size: 1.5rem; }
-            .edito-signature { text-align: center; }
-        }
-    </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Alides Executive Search & Leadership Advisory","alternateName":"Alides","url":"https://www.alides.org/","sameAs":["https://www.linkedin.com/company/alides-executivesearch","https://www.alides.org/","https://fr.alides.org/","https://qa.alides.org/"],"publishingPrinciples":"https://revue.alides.org/","memberOf":[{"@type":"Organization","name":"ECI Group"},{"@type":"Organization","name":"AESC"}]}
 </script>
 </head>
 
 <body>
+<a class="skip" href="#contenu">Aller au contenu</a>
 
-<!-- HEADER -->
-<header>
-    <div class="inner">
-        <a href="https://www.alides.org" class="logo">Alides</a>
-        <nav>
-            <a href="https://www.alides.org/executive-search-maroc-afrique">Executive Search</a>
-            <a href="https://www.alides.org/board-services/board-advisory-questions">Gouvernance</a>
-            <a href="#" class="active">Knowledge Center</a>
-        </nav>
-    </div>
-</header>
+<!-- EN-TÊTE -->
+<header class="site-bar"><div class="inner">
+<a class="brand" href="https://www.alides.org" target="_top" rel="noopener">Alides <small>Knowledge Center</small></a>
+<nav class="site-nav" aria-label="Navigation Alides">
+<a class="u-line" href="https://www.alides.org/executive-search-maroc-afrique" target="_top" rel="noopener">Executive Search</a>
+<a class="u-line" href="https://www.alides.org/board-services/board-advisory-questions" target="_top" rel="noopener">Gouvernance</a>
+<a class="u-line" href="https://revue.alides.org/" aria-current="page">Knowledge Center</a>
+</nav></div></header>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-inner">
-        <p class="hero-label">Knowledge Center</p>
-        <h1 class="hero-title">Dossiers Stratégiques</h1>
-        <p class="hero-statement">Les <em>Dossiers Stratégiques</em> Alides analysent les angles morts qui redéfinissent la gouvernance, la succession et la continuité des organisations patrimoniales, familiales et institutionnelles.</p>
-    </div>
+<!-- COUVERTURE -->
+<section class="cover" aria-labelledby="titre">
+<div class="inner">
+<p class="eyebrow">Knowledge Center</p>
+<h1 id="titre">Dossiers Stratégiques</h1>
+<p class="statement">Les <em>Dossiers Stratégiques</em> Alides analysent les angles morts qui redéfinissent la gouvernance, la succession et la continuité des organisations patrimoniales, familiales et institutionnelles.</p>
+</div>
 </section>
 
-<!-- ÉDITO -->
-<section class="edito">
-    <div class="edito-inner">
-        <p class="edito-label">Éditorial</p>
-        <div class="edito-content">
-            <p>Les transformations les plus décisives ne commencent pas toujours par une crise. Elles commencent souvent par un désalignement silencieux : une succession que l’on croit préparée, un board qui voit sans trancher, une équipe dirigeante qui exécute sans mandat clair, un actionnaire qui tient encore ce qu’aucune fonction n’a pris en charge.</p>
+<main id="contenu">
 
-            <p>Les <em>Dossiers Stratégiques</em> Alides ont été créés pour nommer ces angles morts avant qu’ils ne deviennent des ruptures. Ils ne commentent pas l’actualité. Ils interrogent les structures profondes du leadership, de la gouvernance et de la continuité dans les groupes familiaux, patrimoniaux et institutionnels.</p>
+<!-- ÉDITORIAL -->
+<section class="band" aria-labelledby="edito-h">
+<div class="inner split">
+<div class="aside"><h2 class="kicker" id="edito-h">Éditorial</h2></div>
+<div class="edito">
+<p class="lettrine">Les transformations les plus décisives ne commencent pas toujours par une crise. Elles commencent souvent par un désalignement silencieux : une succession que l’on croit préparée, un board qui voit sans trancher, une équipe dirigeante qui exécute sans mandat clair, un actionnaire qui tient encore ce qu’aucune fonction n’a pris en charge.</p>
 
-            <p>Leur ambition est simple : offrir aux fondateurs, actionnaires, boards, family offices et dirigeants un espace de réflexion exigeant, sobre et utile — au moment où les décisions de leadership engagent bien davantage qu’une organisation.</p>
-        </div>
-        <div class="edito-signature">
-            <p class="edito-author">Mehdi El Idrissi</p>
-            <p class="edito-role">Managing Director, Alides</p>
-        </div>
-    </div>
+<p>Les <em>Dossiers Stratégiques</em> Alides ont été créés pour nommer ces angles morts avant qu’ils ne deviennent des ruptures. Ils ne commentent pas l’actualité. Ils interrogent les structures profondes du leadership, de la gouvernance et de la continuité dans les groupes familiaux, patrimoniaux et institutionnels.</p>
+
+<p>Leur ambition est simple : offrir aux fondateurs, actionnaires, boards, family offices et dirigeants un espace de réflexion exigeant, sobre et utile — au moment où les décisions de leadership engagent bien davantage qu’une organisation.</p>
+
+<div class="signature">
+<span class="sig-name">Mehdi El Idrissi</span>
+<span class="sig-role">Managing Partner, Alides</span>
+</div>
+</div>
+</div>
 </section>
 
 <!-- DERNIER DOSSIER — SEPTEMBRE 2026 -->
-<section class="latest">
-    <div class="latest-inner">
-        <div class="latest-header">
-            <p class="latest-label">Dernier dossier</p>
-            <p class="latest-quarter">Septembre 2026</p>
-            <h2 class="latest-title">Le vrai prix d’une nomination</h2>
-            <p class="latest-subtitle">Pourquoi la valeur d’un dirigeant se joue bien après sa prise de fonction.</p>
-            <a href="le-vrai-prix-dune-nomination.html" class="latest-cta">Lire le dossier</a>
-        </div>
+<section class="band band--white" aria-labelledby="latest-h">
+<div class="inner split">
+<div class="aside">
+<p class="kicker">Dernier dossier</p>
+<p class="kicker-sub">Septembre 2026</p>
+</div>
+<div class="latest">
+<h2 class="latest-title" id="latest-h"><a class="u-line" href="le-vrai-prix-dune-nomination.html">Le vrai prix d’une nomination</a></h2>
+<p class="lede">Pourquoi la valeur d’un dirigeant se joue bien après sa prise de fonction.</p>
+<p class="actions"><a class="btn btn-primary" href="le-vrai-prix-dune-nomination.html">Lire le dossier</a></p>
 
-        <ul class="latest-articles">
-            <li class="latest-article">
-                <p class="latest-article-number">Article 01</p>
-                <h3 class="latest-article-title">L’économie complète d’une nomination</h3>
-                <p class="latest-article-excerpt">Que coûte réellement une nomination stratégique, et qu’engage-t-elle au-delà de son prix ?</p>
-            </li>
-            <li class="latest-article">
-                <p class="latest-article-number">Article 02</p>
-                <h3 class="latest-article-title">La performance ne voyage jamais seule</h3>
-                <p class="latest-article-excerpt">Que reste-t-il de la performance passée lorsque le dirigeant change de système, et qu’a-t-il déjà démontré pouvoir reconstruire ?</p>
-            </li>
-            <li class="latest-article">
-                <p class="latest-article-number">Article 03</p>
-                <h3 class="latest-article-title">Promotion interne, recrutement externe ou architecture hybride</h3>
-                <p class="latest-article-excerpt">Quelle voie répond réellement à la capacité recherchée ?</p>
-            </li>
-            <li class="latest-article">
-                <p class="latest-article-number">Article 04</p>
-                <h3 class="latest-article-title">Toute nomination sélectionne aussi ceux qui restent</h3>
-                <p class="latest-article-excerpt">Comment une nomination modifie-t-elle les conditions dans lesquelles les autres décident de rester, de s’engager ou de partir ?</p>
-            </li>
-            <li class="latest-article">
-                <p class="latest-article-number">Article 05</p>
-                <h3 class="latest-article-title">La nomination ne s’achève pas à la signature</h3>
-                <p class="latest-article-excerpt">Qui porte la responsabilité de la réussite d’un dirigeant après sa nomination, et à quoi reconnaît-on cette réussite ?</p>
-            </li>
-        </ul>
-    </div>
+<ol class="articles">
+<li class="reveal">
+<p class="n">Article 01</p>
+<div><h3><a class="u-line" href="le-vrai-prix-dune-nomination.html#article-1">L’économie complète d’une nomination</a></h3>
+<p class="excerpt">Que coûte réellement une nomination stratégique, et qu’engage-t-elle au-delà de son prix ?</p></div>
+</li>
+<li class="reveal">
+<p class="n">Article 02</p>
+<div><h3><a class="u-line" href="le-vrai-prix-dune-nomination.html#article-2">La performance ne voyage jamais seule</a></h3>
+<p class="excerpt">Que reste-t-il de la performance passée lorsque le dirigeant change de système, et qu’a-t-il déjà démontré pouvoir reconstruire ?</p></div>
+</li>
+<li class="reveal">
+<p class="n">Article 03</p>
+<div><h3><a class="u-line" href="le-vrai-prix-dune-nomination.html#article-3">Promotion interne, recrutement externe ou architecture hybride</a></h3>
+<p class="excerpt">Quelle voie répond réellement à la capacité recherchée ?</p></div>
+</li>
+<li class="reveal">
+<p class="n">Article 04</p>
+<div><h3><a class="u-line" href="le-vrai-prix-dune-nomination.html#article-4">Toute nomination sélectionne aussi ceux qui restent</a></h3>
+<p class="excerpt">Comment une nomination modifie-t-elle les conditions dans lesquelles les autres décident de rester, de s’engager ou de partir ?</p></div>
+</li>
+<li class="reveal">
+<p class="n">Article 05</p>
+<div><h3><a class="u-line" href="le-vrai-prix-dune-nomination.html#article-5">La nomination ne s’achève pas à la signature</a></h3>
+<p class="excerpt">Qui porte la responsabilité de la réussite d’un dirigeant après sa nomination, et à quoi reconnaît-on cette réussite ?</p></div>
+</li>
+</ol>
+</div>
+</div>
 </section>
 
 <!-- ARCHIVES -->
-<section class="archives">
-    <div class="archives-inner">
-        <div class="section-header">
-            <p class="section-label">Archives</p>
-            <h2 class="section-title">Dossiers précédents</h2>
-        </div>
+<section class="band" aria-labelledby="archives-h">
+<div class="inner split">
+<div class="aside"><p class="kicker">Archives</p></div>
+<div class="archives">
+<h2 class="sec-title" id="archives-h">Dossiers précédents</h2>
 
-        <p class="archives-cadrage">Depuis 2025, les <em>Dossiers Stratégiques</em> construisent un même arc : comprendre ce que les dirigeants, boards et actionnaires doivent voir avant que la crise ne les y oblige.</p>
+<p class="cadrage">Depuis 2025, les <em>Dossiers Stratégiques</em> construisent un même arc : comprendre ce que les dirigeants, boards et actionnaires doivent voir avant que la crise ne les y oblige.</p>
 
-        <!-- 2026 -->
-        <div class="year-block">
-            <div class="year-label">
-                <span class="year-num">2026</span>
-                <span class="year-line"></span>
-            </div>
-            <p class="year-theme">IA, ADN fondateur, fonction actionnariale, family offices, nominations.</p>
+<!-- 2026 -->
+<div class="year">
+<div class="year-head"><h3 class="year-num">2026</h3></div>
+<p class="year-theme">IA, ADN fondateur, fonction actionnariale, family offices, nominations.</p>
 
-            <div class="dossier-grid">
+<ul class="dossiers">
 
-                <!-- ÉTÉ 2026 -->
-                <article class="dossier-card">
-                    <p class="dossier-quarter">Été 2026</p>
-                    <h3 class="dossier-title">Family Offices marocains : de l’homme de confiance à l’institution</h3>
-                    <p class="dossier-desc">Pourquoi les familles entrepreneuriales doivent auditer, structurer et professionnaliser leur gouvernance patrimoniale avant la prochaine transmission.</p>
-                    <div class="dossier-meta">
-                        <span class="dossier-count">4 articles</span>
-                        <a href="dossier-ete-2026-complet.html" class="dossier-link">Lire</a>
-                    </div>
-                </article>
+<!-- ÉTÉ 2026 -->
+<li class="dossier reveal">
+<p class="dossier-when">Été 2026</p>
+<div><h4 class="dossier-title"><a class="u-line" href="dossier-ete-2026-complet.html">Family Offices marocains : de l’homme de confiance à l’institution</a></h4>
+<p class="dossier-desc">Pourquoi les familles entrepreneuriales doivent auditer, structurer et professionnaliser leur gouvernance patrimoniale avant la prochaine transmission.</p></div>
+<p class="dossier-meta"><span>4 articles</span><span class="go" aria-hidden="true">Lire</span></p>
+</li>
 
-                <!-- Q2 2026 -->
-                <article class="dossier-card">
-                    <p class="dossier-quarter">Q2 2026</p>
-                    <h3 class="dossier-title">L’actionnaire n’est pas une personne</h3>
-                    <p class="dossier-desc">Ce que la solidité d’un grand groupe patrimonial doit à une fonction que presque personne ne constitue.</p>
-                    <div class="dossier-meta">
-                        <span class="dossier-count">4 articles</span>
-                        <a href="dossier-q2-2026-complet.html" class="dossier-link">Lire</a>
-                    </div>
-                </article>
+<!-- Q2 2026 -->
+<li class="dossier reveal">
+<p class="dossier-when">Q2 2026</p>
+<div><h4 class="dossier-title"><a class="u-line" href="dossier-q2-2026-complet.html">L’actionnaire n’est pas une personne</a></h4>
+<p class="dossier-desc">Ce que la solidité d’un grand groupe patrimonial doit à une fonction que presque personne ne constitue.</p></div>
+<p class="dossier-meta"><span>4 articles</span><span class="go" aria-hidden="true">Lire</span></p>
+</li>
 
-                <!-- Q1 2026 -->
-                <article class="dossier-card">
-                    <p class="dossier-quarter">Q1 2026</p>
-                    <h3 class="dossier-title">L’IA comme infrastructure de puissance</h3>
-                    <p class="dossier-desc">De l’innovation à la souveraineté : ce que l’IA révèle du leadership, de la gouvernance et des boards.</p>
-                    <div class="dossier-meta">
-                        <span class="dossier-count">6 articles</span>
-                        <a href="dossier-q1-2026-complet.html" class="dossier-link">Lire</a>
-                    </div>
-                </article>
+<!-- Q1 2026 -->
+<li class="dossier reveal">
+<p class="dossier-when">Q1 2026</p>
+<div><h4 class="dossier-title"><a class="u-line" href="dossier-q1-2026-complet.html">L’IA comme infrastructure de puissance</a></h4>
+<p class="dossier-desc">De l’innovation à la souveraineté : ce que l’IA révèle du leadership, de la gouvernance et des boards.</p></div>
+<p class="dossier-meta"><span>6 articles</span><span class="go" aria-hidden="true">Lire</span></p>
+</li>
 
-            </div>
-        </div>
+</ul>
+</div>
 
-        <!-- 2025 -->
-        <div class="year-block">
-            <div class="year-label">
-                <span class="year-num">2025</span>
-                <span class="year-line"></span>
-            </div>
-            <p class="year-theme">Gouvernance, succession, leadership sous tension.</p>
+<!-- 2025 -->
+<div class="year">
+<div class="year-head"><h3 class="year-num">2025</h3></div>
+<p class="year-theme">Gouvernance, succession, leadership sous tension.</p>
 
-            <div class="dossier-grid">
+<ul class="dossiers">
 
-                <!-- Q4 2025 -->
-                <article class="dossier-card">
-                    <p class="dossier-quarter">Q4 2025</p>
-                    <h3 class="dossier-title">Leadership sous tension</h3>
-                    <p class="dossier-desc">Crise des CEO, succession et gouvernance — ce que les Boards doivent comprendre.</p>
-                    <div class="dossier-meta">
-                        <span class="dossier-count">3 articles</span>
-                        <a href="dossier-q4-2025.html" class="dossier-link">Lire</a>
-                    </div>
-                </article>
+<!-- Q4 2025 -->
+<li class="dossier reveal">
+<p class="dossier-when">Q4 2025</p>
+<div><h4 class="dossier-title"><a class="u-line" href="dossier-q4-2025.html">Leadership sous tension</a></h4>
+<p class="dossier-desc">Crise des CEO, succession et gouvernance — ce que les Boards doivent comprendre.</p></div>
+<p class="dossier-meta"><span>3 articles</span><span class="go" aria-hidden="true">Lire</span></p>
+</li>
 
-                <!-- ÉTÉ 2025 -->
-                <article class="dossier-card">
-                    <p class="dossier-quarter">Été 2025</p>
-                    <h3 class="dossier-title">L’été, saison des dirigeants lucides</h3>
-                    <p class="dossier-desc">Gouvernance, succession, alignement, exécution — cinq leviers critiques pour la rentrée.</p>
-                    <div class="dossier-meta">
-                        <span class="dossier-count">5 articles</span>
-                        <a href="dossier-ete-2025-complet.html" class="dossier-link">Lire</a>
-                    </div>
-                </article>
+<!-- ÉTÉ 2025 -->
+<li class="dossier reveal">
+<p class="dossier-when">Été 2025</p>
+<div><h4 class="dossier-title"><a class="u-line" href="dossier-ete-2025-complet.html">L’été, saison des dirigeants lucides</a></h4>
+<p class="dossier-desc">Gouvernance, succession, alignement, exécution — cinq leviers critiques pour la rentrée.</p></div>
+<p class="dossier-meta"><span>5 articles</span><span class="go" aria-hidden="true">Lire</span></p>
+</li>
 
-                <!-- Q3 2025 -->
-                <article class="dossier-card">
-                    <p class="dossier-quarter">Q3 2025</p>
-                    <h3 class="dossier-title">Gouverner sans illusion</h3>
-                    <p class="dossier-desc">Ce que vos comités ne voient pas — piloter dans l’incertitude.</p>
-                    <div class="dossier-meta">
-                        <span class="dossier-count">5 articles</span>
-                        <a href="dossier-q3-2025-complet.html" class="dossier-link">Lire</a>
-                    </div>
-                </article>
+<!-- Q3 2025 -->
+<li class="dossier reveal">
+<p class="dossier-when">Q3 2025</p>
+<div><h4 class="dossier-title"><a class="u-line" href="dossier-q3-2025-complet.html">Gouverner sans illusion</a></h4>
+<p class="dossier-desc">Ce que vos comités ne voient pas — piloter dans l’incertitude.</p></div>
+<p class="dossier-meta"><span>5 articles</span><span class="go" aria-hidden="true">Lire</span></p>
+</li>
 
-                <!-- Q2 2025 -->
-                <article class="dossier-card">
-                    <p class="dossier-quarter">Q2 2025</p>
-                    <h3 class="dossier-title">Succession : le moment de vérité</h3>
-                    <p class="dossier-desc">Quand la transmission du pouvoir révèle la maturité d’une gouvernance.</p>
-                    <div class="dossier-meta">
-                        <span class="dossier-count">5 articles</span>
-                        <a href="dossier-q2-2025-complet.html" class="dossier-link">Lire</a>
-                    </div>
-                </article>
+<!-- Q2 2025 -->
+<li class="dossier reveal">
+<p class="dossier-when">Q2 2025</p>
+<div><h4 class="dossier-title"><a class="u-line" href="dossier-q2-2025-complet.html">Succession : le moment de vérité</a></h4>
+<p class="dossier-desc">Quand la transmission du pouvoir révèle la maturité d’une gouvernance.</p></div>
+<p class="dossier-meta"><span>5 articles</span><span class="go" aria-hidden="true">Lire</span></p>
+</li>
 
-                <!-- Q1 2025 -->
-                <article class="dossier-card">
-                    <p class="dossier-quarter">Q1 2025</p>
-                    <h3 class="dossier-title">Gouverner dans un monde fragmenté</h3>
-                    <p class="dossier-desc">Ce que les PDG et les conseils doivent anticiper en 2025.</p>
-                    <div class="dossier-meta">
-                        <span class="dossier-count">4 articles</span>
-                        <a href="dossier-q1-2025-complet.html" class="dossier-link">Lire</a>
-                    </div>
-                </article>
+<!-- Q1 2025 -->
+<li class="dossier reveal">
+<p class="dossier-when">Q1 2025</p>
+<div><h4 class="dossier-title"><a class="u-line" href="dossier-q1-2025-complet.html">Gouverner dans un monde fragmenté</a></h4>
+<p class="dossier-desc">Ce que les PDG et les conseils doivent anticiper en 2025.</p></div>
+<p class="dossier-meta"><span>4 articles</span><span class="go" aria-hidden="true">Lire</span></p>
+</li>
 
-            </div>
-        </div>
+</ul>
+</div>
 
-    </div>
+</div>
+</div>
 </section>
 
 <!-- POURQUOI -->
-<section class="why">
-    <div class="why-inner">
-        <h2 class="why-title">Pourquoi un Knowledge Center ?</h2>
-
-        <div class="why-content">
-            <div class="why-item">
-                <h3 class="why-item-title">Nommer les angles morts</h3>
-                <p class="why-item-text">Identifier les désalignements silencieux qui précèdent les crises de succession, de gouvernance ou de leadership.</p>
-            </div>
-
-            <div class="why-item">
-                <h3 class="why-item-title">Éclairer les décisions de gouvernance</h3>
-                <p class="why-item-text">Offrir aux boards, actionnaires et dirigeants des cadres de lecture exigeants pour mieux arbitrer les décisions critiques.</p>
-            </div>
-
-            <div class="why-item">
-                <h3 class="why-item-title">Élever les standards de continuité</h3>
-                <p class="why-item-text">Contribuer à la professionnalisation des pratiques de gouvernance au Maroc, en Afrique et dans les groupes patrimoniaux en transformation.</p>
-            </div>
-        </div>
-    </div>
+<section class="band band--white" aria-labelledby="why-h">
+<div class="inner split">
+<div class="aside"><h2 class="why-title" id="why-h">Pourquoi un Knowledge Center ?</h2></div>
+<ol class="convictions">
+<li>
+<h3>Nommer les angles morts</h3>
+<p>Identifier les désalignements silencieux qui précèdent les crises de succession, de gouvernance ou de leadership.</p>
+</li>
+<li>
+<h3>Éclairer les décisions de gouvernance</h3>
+<p>Offrir aux boards, actionnaires et dirigeants des cadres de lecture exigeants pour mieux arbitrer les décisions critiques.</p>
+</li>
+<li>
+<h3>Élever les standards de continuité</h3>
+<p>Contribuer à la professionnalisation des pratiques de gouvernance au Maroc, en Afrique et dans les groupes patrimoniaux en transformation.</p>
+</li>
+</ol>
+</div>
 </section>
 
-<!-- CTA -->
-<section class="cta">
-    <div class="cta-inner">
-        <p class="cta-text">Un enjeu de gouvernance, de succession ou de leadership mérite d’être discuté.</p>
-        <a href="https://www.alides.org/contact" class="cta-btn">Nous contacter</a>
-    </div>
+<!-- INVITATION À L'ÉCHANGE -->
+<section class="band band--navy" aria-label="Contact">
+<div class="inner invite">
+<p>Un enjeu de gouvernance, de succession ou de leadership mérite d’être discuté.</p>
+<a class="btn btn-secondary" href="https://www.alides.org/contact" target="_top" rel="noopener">Nous contacter</a>
+</div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-    <div class="inner">
-        <span class="footer-logo">Alides</span>
-        <div class="footer-links">
-            <a href="https://www.alides.org">Accueil</a>
-            <a href="https://www.alides.org/executive-search-maroc-afrique">Executive Search</a>
-            <a href="https://www.alides.org/board-services/board-advisory-questions">Gouvernance</a>
-            <a href="https://www.linkedin.com/company/alides-executivesearch" target="_blank">LinkedIn</a>
-            <a href="/mentions-legales.html">Mentions légales</a>
-        </div>
-        <span class="footer-copy">© 2026 Alides. Tous droits réservés.</span>
-    </div>
-</footer>
+</main>
 
+<!-- PIED DE PAGE -->
+<footer class="colophon"><div class="inner">
+<div><a class="brand" href="https://www.alides.org" target="_top" rel="noopener">Alides</a><p>Paris · Doha · Casablanca</p>
+<p class="links"><a href="https://www.alides.org" target="_top" rel="noopener">Accueil</a> · <a href="https://www.alides.org/executive-search-maroc-afrique" target="_top" rel="noopener">Executive Search</a> · <a href="https://www.alides.org/board-services/board-advisory-questions" target="_top" rel="noopener">Gouvernance</a> · <a href="https://revue.alides.org/">Knowledge Center</a> · <a href="https://www.linkedin.com/company/alides-executivesearch" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://www.alides.org/contact" target="_top" rel="noopener">Nous contacter</a> · <a href="/mentions-legales.html">Mentions légales</a></p></div>
+<div><p class="legal">Alides est une marque exploitée par Executive Consulting International Group SARLAU, Capital 20 000 DHS, RC Casablanca 579001, IF 53728283, ICE 003228135000093. 47 rue Othman Ben Affan, 21100 Casablanca.</p>
+<p class="legal">© 2026 Alides. Tous droits réservés.</p></div>
+</div></footer>
+
+<script>
+(function(){
+'use strict';
+var root=document.documentElement;
+if(root.className.indexOf('js')===-1) return;
+var els=[].slice.call(document.querySelectorAll('.reveal'));
+var seen=false;
+function show(el){ el.classList.add('is-in'); }
+var io=new IntersectionObserver(function(entries){
+  seen=true;
+  entries.forEach(function(e){ if(e.isIntersecting){ show(e.target); io.unobserve(e.target); } });
+},{rootMargin:'0px 0px -6% 0px'});
+els.forEach(function(el){ io.observe(el); });
+/* Sécurité : si l'observation ne s'est pas déclenchée, tout est affiché. */
+setTimeout(function(){ if(!seen){ els.forEach(show); } },2500);
+/* Impression : tout afficher avant le rendu. */
+window.addEventListener('beforeprint',function(){ els.forEach(show); });
+})();
+</script>
 </body>
 </html>
