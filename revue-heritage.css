@@ -1,0 +1,122 @@
+/* ================================================================
+   revue-heritage.css — Alides Knowledge Center
+   Couche d'alignement des dossiers antérieurs à septembre 2026.
+   Chargée APRÈS la feuille interne de chaque dossier, elle ramène
+   les quatre anciens gabarits vers la charte de référence (revue.css,
+   dossier « Le vrai prix d'une nomination ») sans toucher à leur
+   structure : polices locales, couleurs de texte, corps de lecture,
+   en-tête et pied de page communs.
+   Toutes les classes ajoutées sont préfixées « rv- ».
+   ================================================================ */
+@font-face{font-family:"EB Garamond";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/eb-garamond-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"EB Garamond";font-style:italic;font-weight:400;font-display:swap;src:url("fonts/eb-garamond-latin-400-italic.woff2") format("woff2")}
+@font-face{font-family:"EB Garamond";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/eb-garamond-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"EB Garamond";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/eb-garamond-latin-600-normal.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/inter-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/inter-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/inter-latin-600-normal.woff2") format("woff2")}
+
+/* ================================================================
+   1. JETONS
+   ================================================================ */
+:root{
+  /* Référence de la revue */
+  --rv-navy:#142036;
+  --rv-ink:#1B2233;
+  --rv-slate:#5B6274;
+  --rv-gold:#C6A157;
+  --rv-bronze:#806327;
+  --rv-gold-soft:#E6D5AE;
+  --rv-ivory:#F7F5F2;
+  --rv-rule:#DAD3C6;
+  --rv-serif:"EB Garamond",Garamond,"Times New Roman",Georgia,serif;
+  --rv-sans:"Inter","Helvetica Neue",Arial,sans-serif;
+  --rv-fs:20px;
+  --rv-lh:1.65;
+  --rv-container:1200px;
+  --rv-gutter:clamp(16px,4vw,40px);
+
+  /* Gabarit 2025 (Q1, Q2, Q3, été) */
+  --color-primary:#142036;
+  --color-gold:#C6A157;
+  --color-ivory:#F7F5F2;
+  --color-text:#1B2233;
+  --color-text-light:#5B6274;
+
+  /* Gabarit Q4 2025 : palette et polices ramenées à la charte */
+  --color-midnight:#0e1727;
+  --color-deep-blue:#142036;
+  --color-navy:#142036;
+  --font-display:"EB Garamond",Garamond,Georgia,serif;
+  --font-body:"EB Garamond",Garamond,Georgia,serif;
+
+  /* Gabarits 2026 (Q1, Q2, été) */
+  --alides-text:#1B2233;
+  --alides-text-light:#5B6274;
+  --alides-gold-dark:#806327;
+}
+@media (max-width:1023px){:root{--rv-fs:19px}}
+@media (max-width:480px){:root{--rv-fs:18px;--rv-lh:1.6}}
+
+/* ================================================================
+   2. CORPS DE LECTURE
+   Même corps, même interligne et même alignement que le dossier de
+   référence. Les blocs particuliers (encadrés, conclusions sur fond
+   marine) gardent leurs réglages propres, plus spécifiques.
+   ================================================================ */
+.article-content p,.article-content li,.intro-text p,
+.article-full-body p,.article-full-body li,
+.content-body p,.content-body li,
+.prose p,.prose li{font-size:var(--rv-fs);line-height:var(--rv-lh);text-align:left;-webkit-hyphens:manual;hyphens:manual}
+
+/* ================================================================
+   3. EN-TÊTE COMMUN
+   ================================================================ */
+.rv-bar{background:var(--rv-ivory);border-bottom:1px solid var(--rv-rule);position:relative;z-index:5}
+.rv-bar-inner{max-width:var(--rv-container);margin:0 auto;padding:.6rem var(--rv-gutter);display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.rv-brand{font-family:var(--rv-serif);font-weight:600;font-size:24px;line-height:1;letter-spacing:0;color:var(--rv-navy);text-decoration:none;display:inline-flex;align-items:baseline;gap:12px;padding:.35em 0}
+.rv-brand small{font-family:var(--rv-sans);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--rv-slate);font-weight:500}
+.rv-brand:hover{color:var(--rv-navy)}
+.rv-nav{display:flex;flex-wrap:wrap;gap:0 24px;font-family:var(--rv-sans);font-size:14px;line-height:1.65;font-weight:500}
+.rv-nav a{color:var(--rv-navy);padding:9px 0 6px;white-space:nowrap;display:inline-block;letter-spacing:0;text-transform:none}
+.rv-line{text-decoration:none;background-image:linear-gradient(var(--rv-gold),var(--rv-gold));background-repeat:no-repeat;background-position:0 100%;background-size:0 1px;transition:background-size .18s cubic-bezier(.22,1,.36,1)}
+.rv-line:hover,.rv-line:focus-visible,.rv-nav a[aria-current]{background-size:100% 1px}
+@media (max-width:600px){.rv-nav{gap:0 16px;font-size:12.8px}}
+
+/* ================================================================
+   4. PIED DE PAGE COMMUN
+   ================================================================ */
+.rv-foot{background:var(--rv-navy);color:var(--rv-gold-soft);font-family:var(--rv-sans);font-size:12.8px;line-height:1.55;text-align:left;border-top:1px solid rgba(255,255,255,.12)}
+.rv-foot-inner{max-width:var(--rv-container);margin:0 auto;padding:40px var(--rv-gutter);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:24px 48px}
+.rv-foot p{margin:0 0 8px;font-family:var(--rv-sans);font-size:12.8px;line-height:1.55;color:var(--rv-gold-soft);text-align:left;max-width:none}
+.rv-foot a{color:#fff;text-decoration:underline;text-decoration-thickness:.06em;text-underline-offset:.14em}
+.rv-foot .rv-brand{color:#fff;margin-bottom:8px;text-decoration:none}
+.rv-foot .rv-links a{display:inline-block;padding:5px 0}
+
+/* ================================================================
+   5. CORRECTIONS PROPRES À CHAQUE GABARIT
+   ================================================================ */
+/* 2025 : libellé « Article 0x » en bronze, lisible sur fond clair (l'or de marque ne l'est pas). */
+.article-header .article-number{color:var(--rv-bronze)}
+
+/* 2026 (Q2, été) : l'en-tête n'étant plus fixe, la barre de progression remonte en haut de fenêtre. */
+.reading-progress{top:0}
+
+/* Q4 2025 : les blocs animés restent visibles si le script ne s'exécute pas,
+   à l'impression et lorsque la réduction des animations est demandée ; animation raccourcie. */
+.reveal{transform:translateY(12px);transition:opacity .4s cubic-bezier(.22,1,.36,1),transform .4s cubic-bezier(.22,1,.36,1)}
+html:not(.js) .reveal{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .rv-line{transition:none}
+}
+
+/* ================================================================
+   6. IMPRESSION
+   ================================================================ */
+@media print{
+  .rv-bar{display:none!important}
+  .reveal{opacity:1!important;transform:none!important}
+  .rv-foot{background:none;color:#000;border-top:1px solid #000}
+  .rv-foot p,.rv-foot a,.rv-foot .rv-brand{color:#000}
+}
