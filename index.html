@@ -27,6 +27,8 @@
 
 <!-- Les lignes de sommaire ne sont masquées avant leur apparition que si ce script s'exécute. -->
 <script>(function(w,d){if('IntersectionObserver' in w&&!w.matchMedia('(prefers-reduced-motion:reduce)').matches){d.documentElement.className+=' js';}})(window,document);</script>
+<!-- Tous les liens s'ouvrent en pleine fenêtre : un dossier ne se charge jamais dans le cadre de alides.org/knowledge. -->
+<base target="_top">
 <link rel="stylesheet" href="revue.css">
 
 <script type="application/ld+json">
@@ -35,7 +37,7 @@
 </head>
 
 <body>
-<a class="skip" href="#contenu">Aller au contenu</a>
+<a class="skip" href="#contenu" target="_self">Aller au contenu</a>
 
 <!-- EN-TÊTE -->
 <header class="site-bar"><div class="inner">
